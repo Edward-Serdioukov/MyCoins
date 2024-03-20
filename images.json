@@ -1,0 +1,259 @@
+[   
+     {
+        "src": "/images/2024_Summer_Olympics_Logo.png",
+        "title": "Paris 2024 (1)",
+        "color": "france",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXXIII Summer Olympics",
+        "code": "2024s"
+    },
+    {
+        "src": "/images/beijing-olympic-logo2.jpg",
+        "title": "Beijing 2022 (2)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXIV Winter Olympics",
+        "code": "2022w"
+    },
+    {
+        "src": "/images/tokyo_2020_0.jpg",
+        "title": "Tokyo 2020 (3...)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXXII Summer Olympics",
+        "code": "2020s"
+    },
+    {
+        "src": "/images/olimpiada-2018-phenchhan-5.jpg",
+        "title": "Phenchhan 2018 (2)",
+        "color": "yellow",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXIII Winter Olympics",
+        "code": "2018w"
+    },
+    {
+        "src": "images/Rio2016_logo.jpg",
+        "title": "Rio 2016 (3...)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXXI Summer Olympics",
+        "code": "2016s"
+    },
+    {
+        "src": "images/sochi_2014.jpg",
+        "title": "Sochi 2014 (3...)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXII Winter Olympics",
+        "code": "2014w"
+    },
+    {
+        "src": "images/london_2012.jpg",
+        "title": "London 2012 (3...)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXX Summer Olympics",
+        "code": "2012s"
+    },
+    {
+        "src": "images/Vancouver2010_logo.png",
+        "title": "Vancouver 2010 (3)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXI Winter Olympics",
+        "code": "2010w"
+    },
+    {
+        "src": "images/220px-Beijing_2008_Olympics_logo.svg_.png",
+        "title": "Beijing 2008 (3)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXIX Summer Olympics",
+        "code": "2008s"
+    },
+    {
+        "src": "images/578px-Olympische_Winterspiele_2006_logo.svg_.png",
+        "title": "Torino 2006 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XX Winter Olympics",
+        "code": "2006w"
+    },
+    {
+        "src": "images/372px-Athens_2004_logo.svg_.png",
+        "title": "Athens 2004 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXVIII Summer Olympics",
+        "code": "2004s"
+    },
+    {
+        "src": "images/450px-Olympische_Spiele_Salt_Lake_City_2002.svg_.png",
+        "title": "Salt Lake City 2002 (0)",
+        "color": "red",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XIX Winter Olympics",
+        "code": "2002w"
+    },
+    {
+        "src": "images/483px-Olympische_Spiele_Sydney_2000.svg_.png",
+        "title": "Sydney 2000 (2)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXVII Summer Olympics",
+        "code": "2000s"
+    },
+    {
+        "src": "images/401px-1998_Winter_Olympics_logo.svg_.png",
+        "title": "Nagano 1998 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XVIII Winter Olympics",
+        "code": "1998w"
+    },
+    {
+        "src": "images/220px-1996_Summer_Olympics.svg_.png",
+        "title": "Atlanta 1996 (3)",
+        "color": "yellow",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXVI Summer Olympics",
+        "code": "1996s"
+    },
+    {
+        "src": "images/Lillehammer1994.jpg",
+        "title": "Lillehammer 1994 (2)",
+        "color": "yellow",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XVII Winter Olympics",
+        "code": "1994w"
+    },
+    {
+        "src": "images/571px-1992summerolympicslogo.svg_.png",
+        "title": "Barcelona 1992 (2)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXV Summer Olympics",
+        "code": "1992s"
+    },
+    {
+        "src": "images/391px-Olympia_1992_Albertville.svg_.png",
+        "title": "Albertville 1992 (0)",
+        "color": "red",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XVI Winter Olympics",
+        "code": "1992w"
+    },
+    {
+        "src": "images/266px-Seoul_1988_Olympics_logo.svg_.png",
+        "title": "Seoul 1988 (3)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXIV Summer Olympics",
+        "code": "1988s"
+    },
+    {
+        "src": "images/Calgary1988.jpg",
+        "title": "Calgary 1988 (1)",
+        "color": "yellow",       
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XV Winter Olympics",
+        "code": "1988w"
+    },
+    {
+        "src": "images/losangeles1984.gif",
+        "title": "Los Angeles 1984 (1)",
+        "color": "yellow",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXIII Summer Olympics",
+        "code": "1984s"
+    },
+    {
+        "src": "images/347px-1984_Winter_Olympics_logo.svg_.png",
+        "title": "Srajevo 1984 (1)",
+        "color": "yellow",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XIV Winter Olympics",
+        "code": "1984w"
+    },
+    {
+        "src": "images/1980S_emblem_b.png",
+        "title": "Moscow 1980 (2)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXII Summer Olympics",
+        "code": "1980s"
+    },
+    {
+        "src": "images/318px-1980_Winter_Olympics_emblem.svg_.png",
+        "title": "Lake Placid 1980 (0)",
+        "color": "red",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XIII Winter Olympics",
+        "code": "1980w"
+    },
+    {
+        "src": "images/olympic1976.gif",
+        "title": "Montreal 1976 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XXI Summer Olympics",
+        "code": "1976s"
+    },
+    {
+        "src": "images/1976W_emblem_b.gif",
+        "title": "Innsbruck 1976 (0)",
+        "color": "red",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XII Winter Olympics",
+        "code": "1976w"
+    },
+    {
+        "src": "images/292px-1972_Summer_Olympics_emblem.svg_.png",
+        "title": "Munchen 1972 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XX Summer Olympics",
+        "code": "1972s"
+    },
+    {
+        "src": "images/1972_sapporo_logo_0.jpg",
+        "title": "Sapporo 1972 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XI Winter Olympics",
+        "code": "1972w"
+    },
+    {
+        "src": "images/800px-Mexico-68.svg_.png",
+        "title": "Mexico 1968 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XIX Summer Olympics",
+        "code": "1968s"
+    },
+    {
+        "src": "images/1968W_emblem_b.gif",
+        "title": "Grenoble 1968 (0)",
+        "color": "red",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "X Winter Olympics",
+        "code": "1968w"
+    },
+    {
+        "src": "images/Tokyo1964.jpg",
+        "title": "Tokyo 1964 (2)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "XVIII Summer Olympics",
+        "code": "1964s"
+    },
+    {
+        "src": "images/1964W_emblem_b.gif",
+        "title": "Innsbruck 1964 (1)",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "games": "IX Winter Olympics",
+        "code": "1964w"
+    }        
+
+    ]

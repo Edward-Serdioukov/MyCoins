@@ -1,0 +1,412 @@
+[
+        {
+            "src1": "coins/austria-50-schilling-1964-2.jpg ",
+            "src2": "coins/austria-50-schilling-1964.jpg ",
+            "title": "50 Schilling 1964",
+            "country": "austria",        
+            "composition": "Silver (.900) (Copper .100)",
+            "code": "1964w"
+        },
+
+        {
+            "src1": "coins/japan-1000-yen-1964.jpg  ",
+            "src2": "coins/japan-1000-yen-1964-2.jpg  ",
+            "title": "1000 Yen (1964)",
+            "country": "japan",  
+            "composition": "Silver (.925) (Copper .075)",            
+            "code": "1964s"
+        },
+        {
+            "src1": "coins/japan-100-yen-1964.jpg  ",
+            "src2": "coins/japan-100-yen-1964-2.jpg  ",
+            "title": "100 Yen (1964)",
+            "country": "japan",  
+            "composition": "Silver (.600) (Copper .300, Zinc 0.100)", 
+            "code": "1964s"
+        },
+        {
+            "src1": "coins/mexico-25-pesos-1968-2.jpg ",
+            "src2": "coins/mexico-25-pesos-1968.jpg ",
+            "title": "25 Pesos (1968)",
+            "country": "mexico", 
+            "composition": "Silver (.720) (Copper .280)", 
+            "code": "1968s"
+        },
+        {
+            "src1": "coins/japan-100-yen-1972-2.jpg ",
+            "src2": "coins/japan-100-yen-1972.jpg ",
+            "title": "100 Yen (1972)",
+            "country": "japan",  
+            "composition": "Copper-nickel (75% Copper, 25% Nickel)",
+            "code": "1972w"
+        },
+        {
+            "src1": "coins/germany-10-mark-1972.jpg ",
+            "src2": "coins/germany-10-mark-1972-2.jpg ",
+            "title": "10 Mark (1972)",
+            "country": "germany",  
+            "composition": "Silver (.625)",
+            "code": "1972s"
+        },
+        {
+            "src1": "coins/canada-10-dollars-1976-2.jpg  ",
+            "src2": "coins/canada-10-dollars-1976.jpg  ",
+            "title": "10 Dollars (1976)",
+            "country": "canada",  
+            "composition": "Silver (.925)",
+            "code": "1976s"
+        },
+        {
+            "src1": "coins/ussr-1-ruble-1977-(1980).jpg  ",
+            "src2": "coins/ussr-1-ruble-1977-(1980)-2.jpg  ",
+            "title": "1 Ruble (1977)",
+            "country": "russia",  
+            "composition": "Nickel silver",
+            "code": "1980s"
+        },
+        {
+            "src1": "coins/poland-20-zlotych-1980-2.jpg",
+            "src2": "coins/poland-20-zlotych-1980.jpg",
+            "title": "20 Zlotych (1980)",
+            "country": "poland",  
+            "composition": "Copper-nickel",
+            "code": "1980s"
+        },
+        {
+            "src1": "coins/cuba-1-peso-1984w.jpg",
+            "src2": "coins/cuba-1-peso-1984w-2.jpg",
+            "title": "1 Peso (1983)",
+            "country": "cuba",  
+            "composition": "Copper-nickel",
+            "code": "1984w"
+        },
+        {
+            "src1": "coins/cuba-1-peso-1984.jpg ",
+            "src2": "coins/cuba-1-peso-1984-2.jpg  ",
+            "title": "1 Peso (1983)",
+            "country": "cuba",  
+            "composition": "Copper-nickel",
+            "code": "1984s"
+        },
+        {
+            "src1": "coins/cuba-1-peso-1988w.jpg",
+            "src2": "coins/cuba-1-peso-1988w-2.jpg",
+            "title": "1 Peso (1986)",
+            "country": "cuba",  
+            "composition": "Copper-nickel",
+            "code": "1988w"
+        },
+        {
+            "src1": "coins/south_korea-1000-won-1988s.jpg ",
+            "src2": "coins/south_korea-1000-won-1988s-2.jpg ",
+            "title": "1000 Won (1983)",
+            "country": "south korea",  
+            "composition": "Copper-nickel",
+            "code": "1988s"
+        },
+        {
+            "src1": "coins/south_korea-1000-won-basketball-1988s.jpg",
+            "src2": "coins/south_korea-1000-won-basketball-1988s-2.jpg ",
+            "title": "1000 Won (1986)",
+            "country": "south korea", 
+            "composition": "Copper-nickel",
+            "code": "1988s"
+        },        
+        {
+            "src1": "coins/portugal-250-escudos-1988-2.jpg ",
+            "src2": "coins/portugal-250-escudos-1988.jpg ",
+            "title": "250 Escudos (1988)",
+            "country": "portugal", 
+            "composition": "Copper-nickel",
+            "code": "1988s"
+        },
+        {
+            "src1": "coins/spain-25-pesetas-1992s.jpg ",
+            "src2": "coins/spain-25-pesetas-1992s-2.jpg ",
+            "title": "25 Pesetas (1992)",
+            "country": "spain", 
+            "composition": "Aluminium bronze ",
+            "code": "1992s"
+        },        
+        {
+            "src1": "coins/portugal-200-escudos-1992-2.jpg  ",
+            "src2": "coins/portugal-200-escudos-1992.jpg  ",
+            "title": "200 Escudos (1992)",
+            "country": "portugal", 
+            "composition": "Copper-nickel",
+            "code": "1992s"
+        },
+        {
+            "src1": "coins/poland-20000-zlotych-1994w.jpg",
+            "src2": "coins/poland-20000-zlotych-1994w-2.jpg",
+            "title": "20000 Zlotych (1993)",
+            "country": "poland", 
+            "composition": "Nickel",
+            "code": "1994w"
+        },
+        {
+            "src1": "coins/turkey-10000-lira-1994.jpg",
+            "src2": "coins/turkey-10000-lira-1994-2.jpg",
+            "title": "10000 Lira (1993)",
+            "country": "turkey", 
+            "composition": "Copper-Zinc-Nickel",
+            "code": "1994w"
+        },
+        {
+            "src1": "coins/ukraine-2000000-karbovantsiv-1996.jpg ",
+            "src2": "coins/ukraine-2000000-karbovantsiv-1996-2.jpg ",
+            "title": "2000000 Karbovantsiv (1996)",
+            "country": "ukraine", 
+            "composition": "Silver (.925)",
+            "code": "1996s"
+        },        
+        {
+            "src1": "coins/portugal-200-escudos-1996.jpg   ",
+            "src2": "coins/portugal-200-escudos-1996-2.jpg  ",
+            "title": "200 Escudos (1996)",
+            "country": "portugal", 
+            "composition": "Bimetallic: copper-nickel plated nickel center in nickel brass ring",
+            "code": "1996s"
+        },
+        {
+            "src1": "coins/romania-10-lei-1996s.jpg ",
+            "src2": "coins/romania-10-lei-1996s-2.jpg ",
+            "title": "10 Lei (1996)",
+            "country": "romania", 
+            "composition": "Nickel plated steel",
+            "code": "1996s"
+        },              
+        {
+            "src1": "coins/japan-500-yen-1998.jpg  ",
+            "src2": "coins/japan-500-yen-1998-2.jpg  ",
+            "title": "500 Yen (1998)",
+            "country": "japan", 
+            "composition": "Copper-nickel (75% Copper, 25% Nickel)",
+            "code": "1998w"
+        },
+        {
+            "src1": "coins/australia-1-dollar-2000.jpg  ",
+            "src2": "coins/australia-1-dollar-2000-2.jpg  ",
+            "title": "1 dollar (2000)",
+            "country": "australia", 
+            "composition": "Aluminium-Bronze",
+            "code": "2000s"
+        },
+        {
+            "src1": "coins/portugal-200-escudos-2000.jpg ",
+            "src2": "coins/portugal-200-escudos-2000-2.jpg ",
+            "title": "200 Escudos (2000)",
+            "country": "portugal", 
+            "composition": "Bimetallic: copper-nickel center in nickel brass ring",
+            "code": "2000s"
+        },
+        {
+            "src1": "coins/greece-2-euro-2004.jpg  ",
+            "src2": "coins/greece-2-euro-2004-2.jpg ",
+            "title": "2 Euro (2004)",
+            "country": "greece", 
+            "composition": "Bimetallic: nickel brass",
+            "code": "2004s"
+        },
+        {
+            "src1": "coins/italy-2-euro-2006.jpg   ",
+            "src2": "coins/italy-2-euro-2006-2.jpg ",
+            "title": "2 Euro (2006)",
+            "country": "italy", 
+            "composition": "Bimetallic: nickel brass",
+            "code": "2006w"
+        },
+        {
+            "src1": "coins/china-1-yuan-2008.jpg  ",
+            "src2": "coins/china-1-yuan-2008-2.jpg ",
+            "title": "1 Yuan (2008)",
+            "country": "china", 
+            "composition": "Brass",
+            "code": "2008s"
+        },
+        {
+            "src1": "coins/china-1-yuan-2008-1-1.jpg  ",
+            "src2": "coins/china-1-yuan-2008-1-2.jpg ",
+            "title": "1 Yuan (2008)",
+            "country": "china", 
+            "composition": "Brass",
+            "code": "2008s"
+        },
+        {
+            "src1": "coins/poland-2-zlote-2008.jpg  ",
+            "src2": "coins/poland-2-zlote-2008-2.jpg ",
+            "title": "2 Zlote (2008)",
+            "country": "poland", 
+            "composition": "Brass",
+            "code": "2008s"
+        },
+        {
+            "src1": "coins/canada-1-dollar-2010.jpg ",
+            "src2": "coins/canada-1-dollar-2010-2.jpg ",
+            "title": "1 Dollar (2010)",
+            "country": "canada", 
+            "composition": "Bronze plated nickel",
+            "code": "2010w"
+        },
+        {
+            "src1": "coins/canada-25-cents-2010.jpg  ",
+            "src2": "coins/canada-25-cents-2010-2.jpg ",
+            "title": "25 Cents (2008)",
+            "country": "canada", 
+            "composition": "Nickel plated steel",
+            "code": "2010w"
+        },
+        {
+            "src1": "coins/poland-2-zlotych-2010.jpg  ",
+            "src2": "coins/poland-2-zlotych-2010-2.jpg ",
+            "title": "2 Zloty (2010)",
+            "country": "poland", 
+            "composition": "Nordic gold",
+            "code": "2010w"
+        },
+        {
+            "src1": "coins/united_kingdom-50-pence-2012-2.jpg",
+            "src2": "coins/united_kingdom-50-pence-2012.jpg ",
+            "title": "50 Pence (2011)",
+            "country": "united kingdom", 
+            "composition": "Silver (.925)",
+            "code": "2012s"
+        },
+        {
+            "src1": "coins/united_kingdom-50-pence-2012-1-2.jpg ",
+            "src2": "coins/united_kingdom-50-pence-2012.jpg",
+            "title": "50 Pence (2011)",
+            "country": "united kingdom",
+            "composition": "Silver (.925)",
+            "code": "2012s"
+        },
+        {
+            "src1": "coins/poland-2-zlote-2012.jpg ",
+            "src2": "coins/poland-2-zlote-2012-2.jpg ",
+            "title": "2 Zloty (2012)",
+            "country": "poland",
+            "composition": "",
+            "code": "2012s"
+        },
+        {
+            "src1": "coins/russia-25-rubles-2014-1-1.jpg ",
+            "src2": "coins/russia-25-rubles-2014-1-2.jpg ",
+            "title": "25 Rubles (2011)",
+            "country": "russia",
+            "composition": "Copper-nickel",
+            "code": "2014w"
+        },
+        {
+            "src1": "coins/russia-25-rubles-2014-2-1.jpg ",
+            "src2": "coins/russia-25-rubles-2014-2-2.jpg ",
+            "title": "25 Rubles (2014)",
+            "country": "russia",
+            "composition": "Copper-nickel",
+            "code": "2014w"
+        },
+        {
+            "src1": "coins/russia-25-rubles-2014-3-1.jpg ",
+            "src2": "coins/russia-25-rubles-2014-3-2.jpg ",
+            "title": "25 Rubles (2014)",
+            "country": "russia",
+            "composition": "Copper-nickel",
+            "code": "2014w"
+        },
+        {
+            "src1": "coins/poland-2-zlote-2014.jpg",
+            "src2": "coins/poland-2-zlote-2014-2.jpg",
+            "title": "2 Zlote (2014)",
+            "country": "poland",
+            "composition": "Nordic gold",
+            "code": "2014w"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-2.jpg  ",
+            "src2": "coins/brazil-1-real-2016.jpg  ",
+            "title": "1 Real (2016)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-3.jpg  ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2016)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-1.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2014)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/ukraine-2-hryvni-2018.jpg ",
+            "src2": "coins/ukraine-2-hryvni-2018-2.jpg ",
+            "title": "2 Hryvni (2018)",
+            "country": "ukraine",
+            "composition": "Nickel brass (German silver)",
+            "code": "2018w"
+        },
+        {
+            "src1": "coins/pridnestroy-1-ruble-2018.jpg ",
+            "src2": "coins/pridnestroy-1-ruble-2018-2.jpg ",
+            "title": "1 Ruble (2017)",
+            "country": "pridnestroy",
+            "composition": "Nickel plated steel",
+            "code": "2018w"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2020)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/portugal-2-euro-2020.jpg ",
+            "src2": "coins/portugal-2-euro-2020-2.jpg",
+            "title": "2 Euro (2021)",
+            "country": "portugal",
+            "composition": "Bimetallic: nickel brass",
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/pridnestroy-1-ruble-2020.jpg ",
+            "src2": "coins/pridnestroy-1-ruble-2020-2.jpg ",
+            "title": "1 Ruble (2020)",
+            "country": "pridnestroy",
+            "composition": "Nickel plated steel",
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/china-5-yuan-2022-1.jpg",
+            "src2": "coins/china-5-yuan-2022.jpg",
+            "title": "5 Yuan (2022)",
+            "country": "china",
+            "composition": "Brass",
+            "code": "2022w"
+        },
+        {
+            "src1": "coins/china-5-yuan-2022-2.jpg",
+            "src2": "coins/china-5-yuan-2022.jpg",
+            "title": "5 Yuan (2022)",
+            "country": "china",
+            "composition": "Brass (with color printing)",
+            "code": "2022w"
+        },
+        {
+            "src1": "coins/france-2-euro-2024-1.jpg",
+            "src2": "coins/france-2-euro-2024.jpg",
+            "title": "2 Euro (2022)",
+            "country": "france",
+            "composition": "Bimetallic: nickel brass)",
+            "code": "2024s"
+        }
+    
+]
