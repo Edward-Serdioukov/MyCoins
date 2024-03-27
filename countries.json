@@ -14,6 +14,14 @@
         "url": "https://olimp-history.ru/node/368",
         "country": "austria",
         "code": ""
+    },    
+    {
+        "src": "/countries/flag-belarus.jpg",
+        "title": "Belarus",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "belarus",
+        "code": ""
     },
     {
         "src": "/countries/flag-brazil.jpg",

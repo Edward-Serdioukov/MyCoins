@@ -334,7 +334,7 @@ class Olympics():
                 bgcolor=colors.SURFACE_VARIANT,
             )
         # Создание галереи картинок
-        details_gallery =  Column([
+        details_gallery =  Row([
                 Card(
                     width=300,
                     height=400,
@@ -363,7 +363,8 @@ class Olympics():
                         padding=15,
                     ),
                 ) for img in coins
-            ]
+                
+            ], wrap=True, spacing=10, alignment=flet.MainAxisAlignment.CENTER,
         )
 
         # Создание контента для детального просмотра
@@ -371,8 +372,13 @@ class Olympics():
         if self.selected_view == '0':
             detail_content = Column([
                 Image(src=self.image_src, width=200, height=200),
-                Text(self.image_title, size=20),
-                Text(self.image_games, size=15),
+                #Text(self.image_title, size=20),
+                Text(
+                    spans=[ flet.TextSpan(
+                    self.image_games, 
+                    flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
+                    url=self.image_url, ),],size=20,),
+                #Text(self.image_games, size=15),
             ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER)
         else:
             detail_content = Column([

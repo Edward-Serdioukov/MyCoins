@@ -2,7 +2,7 @@
         {
             "src1": "coins/austria-50-schilling-1964-2.jpg ",
             "src2": "coins/austria-50-schilling-1964.jpg ",
-            "title": "50 Schilling 1964",
+            "title": "50 Schilling (1964)",
             "country": "austria",        
             "composition": "Silver (.900) (Copper .100)",
             "code": "1964w"
@@ -199,6 +199,14 @@
             "country": "portugal", 
             "composition": "Bimetallic: copper-nickel center in nickel brass ring",
             "code": "2000s"
+        },        
+        {
+            "src1": "coins/belarus-20-rubles-2001.jpg ",
+            "src2": "coins/belarus-20-rubles-2001-2.jpg ",
+            "title": "20 Rubles (2001)",
+            "country": "belarus", 
+            "composition": "Silver (.925)",
+            "code": "2002w"
         },
         {
             "src1": "coins/greece-2-euro-2004.jpg  ",
@@ -313,6 +321,14 @@
             "code": "2014w"
         },
         {
+            "src1": "coins/russia-25-rubles-2014-4-1.jpg ",
+            "src2": "coins/russia-25-rubles-2014-4-2.jpg ",
+            "title": "25 Rubles (2014)",
+            "country": "russia",
+            "composition": "Copper-nickel",
+            "code": "2014w"
+        },
+        {
             "src1": "coins/poland-2-zlote-2014.jpg",
             "src2": "coins/poland-2-zlote-2014-2.jpg",
             "title": "2 Zlote (2014)",
@@ -345,6 +361,86 @@
             "code": "2016s"
         },
         {
+            "src1": "coins/brazil-1-real-2016-4.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2014)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-5.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2014)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-6.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2015)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-7.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2015)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-8.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2015)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-9.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2015)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-10.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2015)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-11.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2016)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-12.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2016)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
+            "src1": "coins/brazil-1-real-2016-13.jpg ",
+            "src2": "coins/brazil-1-real-2016.jpg ",
+            "title": "1 Real (2016)",
+            "country": "brazil",
+            "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "code": "2016s"
+        },
+        {
             "src1": "coins/ukraine-2-hryvni-2018.jpg ",
             "src2": "coins/ukraine-2-hryvni-2018-2.jpg ",
             "title": "2 Hryvni (2018)",
@@ -362,6 +458,54 @@
         },
         {
             "src1": "coins/japan-100-yen-2020.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2020)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-3.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2019)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-4.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2019)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-5.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2019)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-6.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2019)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-7.jpg",
+            "src2": "coins/japan-100-yen-2020-2.jpg ",
+            "title": "100 Yen (2019)",
+            "country": "japan",
+            "composition": "Copper-nickel",          
+            "code": "2020s"
+        },
+        {
+            "src1": "coins/japan-100-yen-2020-8.jpg",
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2020)",
             "country": "japan",
