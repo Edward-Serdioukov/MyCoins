@@ -88,6 +88,7 @@ class Olympics():
             on_change=self.tabs_changed,
             tabs=[Tab(text="All"), 
                   Tab(text="Silver"),
+                  Tab(text="Euro"),
                   ],
         )
 
@@ -169,16 +170,13 @@ class Olympics():
         with open(filename, 'r') as f:
             data = json.load(f)
 
-        composition = ""
         if self.filter_coins.selected_index == 0:
             self.images = data
         elif self.filter_coins.selected_index == 1:
-            composition = "Silver"
-              
-        # Фильтрация элементов по заданному коду
-        if not composition == "":
-            self.images = [item for item in data if composition.lower() in  item['composition'].lower()]
- 
+            self.images = [item for item in data if "Silver".lower() in  item['composition'].lower()]
+        elif self.filter_coins.selected_index == 2:
+            self.images = [item for item in data if "Euro".lower() in  item['title'].lower()]  
+
         items = self.get_cards_coinsview() 
         self.gallery.controls = items
 
@@ -218,7 +216,7 @@ class Olympics():
                     elevation=1,  # Уровень тени
 
                     content= Container( Column([
-                            Image(src=img["src1"], width=100, height=100),
+                            Image(src=img["src1"], width=105, height=105),
                             Row([Text(img["title"], weight=FontWeight.BOLD),], 
                                 spacing=1,alignment="center"),
 
@@ -258,8 +256,7 @@ class Olympics():
         else:
             self.image_src = e.control.data["src"]
         self.image_title = e.control.data["title"]
-        if not self.selected_view == '2':
-            self.image_url = e.control.data["url"]
+        self.image_url = e.control.data["url"]
         self.image_code = e.control.data["code"]
         self.page.go("/details")
   
@@ -380,6 +377,15 @@ class Olympics():
                     url=self.image_url, ),],size=20,),
                 #Text(self.image_games, size=15),
             ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER)
+        elif self.selected_view == '2':
+             detail_content = Column([
+                Image(src=self.image_src, width=200, height=200),
+                Text(
+                    spans=[ flet.TextSpan(
+                    self.image_title, 
+                    flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
+                    url=self.image_url, ),],size=20,),
+            ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER)           
         else:
             detail_content = Column([
                 Image(src=self.image_src, width=200, height=200),

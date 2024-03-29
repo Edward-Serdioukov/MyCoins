@@ -5,6 +5,7 @@
             "title": "50 Schilling (1964)",
             "country": "austria",        
             "composition": "Silver (.900) (Copper .100)",
+            "url": "https://en.ucoin.net/coin/austria-50-schilling-1964/?tid=29495",
             "code": "1964w"
         },
 
@@ -13,7 +14,8 @@
             "src2": "coins/japan-1000-yen-1964-2.jpg  ",
             "title": "1000 Yen (1964)",
             "country": "japan",  
-            "composition": "Silver (.925) (Copper .075)",            
+            "composition": "Silver (.925) (Copper .075)",       
+            "url": "https://en.ucoin.net/coin/japan-1000-yen-1964/?tid=2508",     
             "code": "1964s"
         },
         {
@@ -22,6 +24,7 @@
             "title": "100 Yen (1964)",
             "country": "japan",  
             "composition": "Silver (.600) (Copper .300, Zinc 0.100)", 
+            "url": "https://en.ucoin.net/coin/japan-100-yen-1964/?tid=2507",
             "code": "1964s"
         },
         {
@@ -30,6 +33,7 @@
             "title": "25 Pesos (1968)",
             "country": "mexico", 
             "composition": "Silver (.720) (Copper .280)", 
+            "url": "https://en.ucoin.net/coin/mexico-25-pesos-1968/?tid=29587",
             "code": "1968s"
         },
         {
@@ -38,6 +42,7 @@
             "title": "100 Yen (1972)",
             "country": "japan",  
             "composition": "Copper-nickel (75% Copper, 25% Nickel)",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-1972/?tid=2510",
             "code": "1972w"
         },
         {
@@ -46,6 +51,7 @@
             "title": "10 Mark (1972)",
             "country": "germany",  
             "composition": "Silver (.625)",
+            "url": "https://en.ucoin.net/coin/germany-10-mark-1972/?tid=10213",
             "code": "1972s"
         },
         {
@@ -54,6 +60,7 @@
             "title": "10 Dollars (1976)",
             "country": "canada",  
             "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/canada-10-dollars-1973-1974/?tid=37486",
             "code": "1976s"
         },
         {
@@ -61,7 +68,8 @@
             "src2": "coins/ussr-1-ruble-1977-(1980)-2.jpg  ",
             "title": "1 Ruble (1977)",
             "country": "russia",  
-            "composition": "Nickel silver",
+            "composition": "Copper Nickel Zinc",
+            "url": "https://en.ucoin.net/coin/ussr-1-ruble-1977/?tid=4195",
             "code": "1980s"
         },
         {
@@ -70,6 +78,7 @@
             "title": "20 Zlotych (1980)",
             "country": "poland",  
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/poland-20-zlotych-1980/?tid=14062",
             "code": "1980s"
         },
         {
@@ -78,6 +87,7 @@
             "title": "1 Peso (1983)",
             "country": "cuba",  
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/cuba-1-peso-1983/?tid=34764",
             "code": "1984w"
         },
         {
@@ -86,6 +96,7 @@
             "title": "1 Peso (1983)",
             "country": "cuba",  
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/cuba-1-peso-1983/?tid=38519",
             "code": "1984s"
         },
         {
@@ -94,6 +105,7 @@
             "title": "1 Peso (1986)",
             "country": "cuba",  
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/cuba-1-peso-1986/?tid=41377",
             "code": "1988w"
         },
         {
@@ -102,6 +114,7 @@
             "title": "1000 Won (1983)",
             "country": "south korea",  
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/south_korea-1000-won-1983/?tid=16022",
             "code": "1988s"
         },
         {
@@ -110,6 +123,7 @@
             "title": "1000 Won (1986)",
             "country": "south korea", 
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/south_korea-1000-won-1986/?tid=31392",
             "code": "1988s"
         },        
         {
@@ -118,6 +132,7 @@
             "title": "250 Escudos (1988)",
             "country": "portugal", 
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/portugal-250-escudos-1988/?tid=17240",
             "code": "1988s"
         },
         {
@@ -126,6 +141,7 @@
             "title": "25 Pesetas (1992)",
             "country": "spain", 
             "composition": "Aluminium bronze ",
+            "url": "https://en.ucoin.net/coin/spain-25-pesetas-1990-1991/?tid=9206",
             "code": "1992s"
         },        
         {
@@ -134,6 +150,7 @@
             "title": "200 Escudos (1992)",
             "country": "portugal", 
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/portugal-200-escudos-1992/?tid=16932",
             "code": "1992s"
         },
         {
@@ -142,6 +159,7 @@
             "title": "20000 Zlotych (1993)",
             "country": "poland", 
             "composition": "Nickel",
+            "url": "https://en.ucoin.net/coin/poland-20000-zlotych-1993/?tid=14422",
             "code": "1994w"
         },
         {
@@ -150,6 +168,7 @@
             "title": "10000 Lira (1993)",
             "country": "turkey", 
             "composition": "Copper-Zinc-Nickel",
+            "url": "https://en.ucoin.net/coin/turkey-10000-lira-1994/?tid=16438",
             "code": "1994w"
         },
         {
@@ -158,6 +177,7 @@
             "title": "2000000 Karbovantsiv (1996)",
             "country": "ukraine", 
             "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/ukraine-2000000-karbovantsiv-1996/?tid=25789",
             "code": "1996s"
         },        
         {
@@ -166,6 +186,7 @@
             "title": "200 Escudos (1996)",
             "country": "portugal", 
             "composition": "Bimetallic: copper-nickel plated nickel center in nickel brass ring",
+            "url": "https://en.ucoin.net/coin/portugal-200-escudos-1996/?tid=17315",
             "code": "1996s"
         },
         {
@@ -174,6 +195,7 @@
             "title": "10 Lei (1996)",
             "country": "romania", 
             "composition": "Nickel plated steel",
+            "url": "https://en.ucoin.net/coin/romania-10-lei-1996/?tid=18732",
             "code": "1996s"
         },              
         {
@@ -182,6 +204,7 @@
             "title": "500 Yen (1998)",
             "country": "japan", 
             "composition": "Copper-nickel (75% Copper, 25% Nickel)",
+            "url": "https://en.ucoin.net/coin/japan-500-yen-1998/?tid=2543",
             "code": "1998w"
         },
         {
@@ -190,6 +213,7 @@
             "title": "1 dollar (2000)",
             "country": "australia", 
             "composition": "Aluminium-Bronze",
+            "url": "https://en.ucoin.net/coin/australia-1-dollar-2000/?tid=84297",
             "code": "2000s"
         },
         {
@@ -198,6 +222,7 @@
             "title": "200 Escudos (2000)",
             "country": "portugal", 
             "composition": "Bimetallic: copper-nickel center in nickel brass ring",
+            "url": "https://en.ucoin.net/coin/portugal-200-escudos-2000/?tid=17650",
             "code": "2000s"
         },        
         {
@@ -206,6 +231,7 @@
             "title": "20 Rubles (2001)",
             "country": "belarus", 
             "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/belarus-20-rubles-2001/?tid=19137",
             "code": "2002w"
         },
         {
@@ -214,6 +240,7 @@
             "title": "2 Euro (2004)",
             "country": "greece", 
             "composition": "Bimetallic: nickel brass",
+            "url": "https://en.ucoin.net/coin/greece-2-euro-2004/?tid=1052",
             "code": "2004s"
         },
         {
@@ -222,6 +249,7 @@
             "title": "2 Euro (2006)",
             "country": "italy", 
             "composition": "Bimetallic: nickel brass",
+            "url": "https://en.ucoin.net/coin/italy-2-euro-2006/?tid=1067",
             "code": "2006w"
         },
         {
@@ -230,6 +258,7 @@
             "title": "1 Yuan (2008)",
             "country": "china", 
             "composition": "Brass",
+            "url": "https://en.ucoin.net/coin/china-1-yuan-2008/?tid=17062",
             "code": "2008s"
         },
         {
@@ -238,6 +267,7 @@
             "title": "1 Yuan (2008)",
             "country": "china", 
             "composition": "Brass",
+            "url": "https://en.ucoin.net/coin/china-1-yuan-2008/?tid=17061",
             "code": "2008s"
         },
         {
@@ -246,6 +276,7 @@
             "title": "2 Zlote (2008)",
             "country": "poland", 
             "composition": "Brass",
+            "url": "https://en.ucoin.net/coin/poland-2-zlote-2008/?tid=8599",
             "code": "2008s"
         },
         {
@@ -254,6 +285,7 @@
             "title": "1 Dollar (2010)",
             "country": "canada", 
             "composition": "Bronze plated nickel",
+            "url": "https://en.ucoin.net/coin/canada-1-dollar-2010/?tid=12712",
             "code": "2010w"
         },
         {
@@ -262,6 +294,7 @@
             "title": "25 Cents (2008)",
             "country": "canada", 
             "composition": "Nickel plated steel",
+            "url": "https://en.ucoin.net/coin/canada-25-cents-2008/?tid=12685",
             "code": "2010w"
         },
         {
@@ -270,6 +303,7 @@
             "title": "2 Zloty (2010)",
             "country": "poland", 
             "composition": "Nordic gold",
+            "url": "https://en.ucoin.net/coin/poland-2-zlote-2010/?tid=8644",
             "code": "2010w"
         },
         {
@@ -277,7 +311,8 @@
             "src2": "coins/united_kingdom-50-pence-2012.jpg ",
             "title": "50 Pence (2011)",
             "country": "united kingdom", 
-            "composition": "Silver (.925)",
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/united_kingdom-50-pence-2009-2011/?tid=14165",
             "code": "2012s"
         },
         {
@@ -285,7 +320,8 @@
             "src2": "coins/united_kingdom-50-pence-2012.jpg",
             "title": "50 Pence (2011)",
             "country": "united kingdom",
-            "composition": "Silver (.925)",
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/united_kingdom-50-pence-2011/?tid=14168",
             "code": "2012s"
         },
         {
@@ -294,6 +330,7 @@
             "title": "2 Zloty (2012)",
             "country": "poland",
             "composition": "",
+            "url": "https://en.ucoin.net/coin/poland-2-zlote-2012/?tid=16560",
             "code": "2012s"
         },
         {
@@ -302,6 +339,7 @@
             "title": "25 Rubles (2011)",
             "country": "russia",
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2011-2014/?tid=11408",
             "code": "2014w"
         },
         {
@@ -310,6 +348,7 @@
             "title": "25 Rubles (2014)",
             "country": "russia",
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2012-2014/?tid=16150",
             "code": "2014w"
         },
         {
@@ -318,6 +357,7 @@
             "title": "25 Rubles (2014)",
             "country": "russia",
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2014/?tid=28329",
             "code": "2014w"
         },
         {
@@ -326,6 +366,7 @@
             "title": "25 Rubles (2014)",
             "country": "russia",
             "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2013-2014/?tid=21397",
             "code": "2014w"
         },
         {
@@ -334,6 +375,7 @@
             "title": "2 Zlote (2014)",
             "country": "poland",
             "composition": "Nordic gold",
+            "url": "https://en.ucoin.net/coin/poland-2-zlote-2014/?tid=31234",
             "code": "2014w"
         },
         {
@@ -342,6 +384,7 @@
             "title": "1 Real (2016)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2016/?tid=55769",
             "code": "2016s"
         },
         {
@@ -350,6 +393,7 @@
             "title": "1 Real (2016)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2016/?tid=55770",
             "code": "2016s"
         },
         {
@@ -358,6 +402,7 @@
             "title": "1 Real (2014)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2014/?tid=41671",
             "code": "2016s"
         },
         {
@@ -366,6 +411,7 @@
             "title": "1 Real (2014)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2014/?tid=41674",
             "code": "2016s"
         },
         {
@@ -374,6 +420,7 @@
             "title": "1 Real (2014)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2014/?tid=41672",
             "code": "2016s"
         },
         {
@@ -382,6 +429,7 @@
             "title": "1 Real (2015)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=46167",
             "code": "2016s"
         },
         {
@@ -390,6 +438,7 @@
             "title": "1 Real (2015)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=46170",
             "code": "2016s"
         },
         {
@@ -398,6 +447,7 @@
             "title": "1 Real (2015)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=49321",
             "code": "2016s"
         },
         {
@@ -406,6 +456,7 @@
             "title": "1 Real (2015)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=49320",
             "code": "2016s"
         },
         {
@@ -414,6 +465,7 @@
             "title": "1 Real (2015)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=49342",
             "code": "2016s"
         },
         {
@@ -422,6 +474,7 @@
             "title": "1 Real (2016)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2016/?tid=53308",
             "code": "2016s"
         },
         {
@@ -430,6 +483,7 @@
             "title": "1 Real (2016)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2016/?tid=55764",
             "code": "2016s"
         },
         {
@@ -438,6 +492,7 @@
             "title": "1 Real (2016)",
             "country": "brazil",
             "composition": "Bimetallic: stainless steel center in bronze plated steel ring",
+            "url": "https://en.ucoin.net/coin/brazil-1-real-2015/?tid=49322",
             "code": "2016s"
         },
         {
@@ -445,7 +500,8 @@
             "src2": "coins/ukraine-2-hryvni-2018-2.jpg ",
             "title": "2 Hryvni (2018)",
             "country": "ukraine",
-            "composition": "Nickel brass (German silver)",
+            "composition": "Nickel brass",
+            "url": "https://en.ucoin.net/coin/ukraine-2-hryvni-2018/?tid=75022",
             "code": "2018w"
         },
         {
@@ -454,6 +510,7 @@
             "title": "1 Ruble (2017)",
             "country": "pridnestroy",
             "composition": "Nickel plated steel",
+            "url": "https://en.ucoin.net/coin/transnistria-1-ruble-2017/?tid=75727",
             "code": "2018w"
         },
         {
@@ -461,7 +518,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2020)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2020/?tid=91758",          
             "code": "2020s"
         },
         {
@@ -469,7 +527,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2019)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2019/?tid=87038",          
             "code": "2020s"
         },
         {
@@ -477,7 +536,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2019)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2019/?tid=87042",
             "code": "2020s"
         },
         {
@@ -485,7 +545,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2019)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2019/?tid=87041",
             "code": "2020s"
         },
         {
@@ -493,7 +554,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2019)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2019/?tid=87039",
             "code": "2020s"
         },
         {
@@ -501,7 +563,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2019)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2019/?tid=87040",
             "code": "2020s"
         },
         {
@@ -509,7 +572,8 @@
             "src2": "coins/japan-100-yen-2020-2.jpg ",
             "title": "100 Yen (2020)",
             "country": "japan",
-            "composition": "Copper-nickel",          
+            "composition": "Copper-nickel",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-2020/?tid=91758",
             "code": "2020s"
         },
         {
@@ -518,6 +582,7 @@
             "title": "2 Euro (2021)",
             "country": "portugal",
             "composition": "Bimetallic: nickel brass",
+            "url": "https://en.ucoin.net/coin/portugal-2-euro-2021/?tid=107428",
             "code": "2020s"
         },
         {
@@ -526,6 +591,7 @@
             "title": "1 Ruble (2020)",
             "country": "pridnestroy",
             "composition": "Nickel plated steel",
+            "url": "https://en.ucoin.net/coin/transnistria-1-ruble-2020/?tid=116530",
             "code": "2020s"
         },
         {
@@ -534,6 +600,7 @@
             "title": "5 Yuan (2022)",
             "country": "china",
             "composition": "Brass",
+            "url": "https://en.ucoin.net/coin/china-5-yuan-2022/?tid=124655",
             "code": "2022w"
         },
         {
@@ -542,14 +609,43 @@
             "title": "5 Yuan (2022)",
             "country": "china",
             "composition": "Brass (with color printing)",
+            "url": "https://en.ucoin.net/coin/china-5-yuan-2022/?tid=124654",
             "code": "2022w"
         },
         {
             "src1": "coins/france-2-euro-2024-1.jpg",
             "src2": "coins/france-2-euro-2024.jpg",
+            "title": "2 Euro (2021)",
+            "country": "france",
+            "composition": "Bimetallic: nickel brass)",
+            "url": "https://en.ucoin.net/coin/france-2-euro-2021/?tid=120529",
+            "code": "2024s"
+        },
+        {
+            "src1": "coins/france-2-euro-2024-2.jpg",
+            "src2": "coins/france-2-euro-2024.jpg",
             "title": "2 Euro (2022)",
             "country": "france",
             "composition": "Bimetallic: nickel brass)",
+            "url": "https://en.ucoin.net/coin/france-2-euro-2022/?tid=134640",
+            "code": "2024s"
+        },
+        {
+            "src1": "coins/france-2-euro-2024-3.jpg",
+            "src2": "coins/france-2-euro-2024.jpg",
+            "title": "2 Euro (2023)",
+            "country": "france",
+            "composition": "Bimetallic: nickel brass)",
+            "url": "https://en.ucoin.net/coin/france-2-euro-2023/?tid=145365",
+            "code": "2024s"
+        },
+        {
+            "src1": "coins/france-2-euro-2024-4.jpg",
+            "src2": "coins/france-2-euro-2024.jpg",
+            "title": "2 Euro (2024)",
+            "country": "france",
+            "composition": "Bimetallic: nickel brass)",
+            "url": "https://en.ucoin.net/coin/france-2-euro-2024/?tid=161045",
             "code": "2024s"
         }
     
