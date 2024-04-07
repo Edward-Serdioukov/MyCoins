@@ -169,7 +169,7 @@
     },
     {
         "src": "images/347px-1984_Winter_Olympics_logo.svg_.png",
-        "title": "Srajevo 1984 (1)",
+        "title": "Sarajevo 1984 (1)",
         "color": "yellow",
         "url": "https://olympics.com/en/olympic-games/sarajevo-1984",
         "games": "XIV Winter Olympics",
@@ -201,8 +201,8 @@
     },
     {
         "src": "images/1976W_emblem_b.gif",
-        "title": "Innsbruck 1976 (0)",
-        "color": "red",
+        "title": "Innsbruck 1976 (1)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/innsbruck-1976",
         "games": "XII Winter Olympics",
         "code": "1976w"

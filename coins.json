@@ -41,8 +41,8 @@
             "src2": "coins/japan-100-yen-1972.jpg ",
             "title": "100 Yen (1972)",
             "country": "japan",  
-            "composition": "Copper-nickel (75% Copper, 25% Nickel)",
-            "url": "https://en.ucoin.net/coin/japan-100-yen-1972/?tid=2510",
+            "composition": "Copper-nickel (75% Copper, 25% Nickel) ",
+            "url": "https://en.ucoin.net/coin/germany-10-mark-1972/?cid=10213&vid=3597",
             "code": "1972w"
         },
         {
@@ -55,12 +55,21 @@
             "code": "1972s"
         },
         {
+            "src1": "coins/austria-100-schilling-1976-1.jpg ",
+            "src2": "coins/austria-100-schilling-1976.jpg ",
+            "title": "100 Schilling (1975)",
+            "country": "austria",        
+            "composition": "Silver (.640)",
+            "url": "https://en.ucoin.net/coin/austria-100-schilling-1975/?cid=32452&vid=12124",
+            "code": "1976w"
+        },      
+        {
             "src1": "coins/canada-10-dollars-1976-2.jpg  ",
             "src2": "coins/canada-10-dollars-1976.jpg  ",
-            "title": "10 Dollars (1976)",
+            "title": "10 Dollars (1973)",
             "country": "canada",  
             "composition": "Silver (.925)",
-            "url": "https://en.ucoin.net/coin/canada-10-dollars-1973-1974/?tid=37486",
+            "url": "https://en.ucoin.net/coin/canada-10-dollars-1973/?cid=37486",
             "code": "1976s"
         },
         {
@@ -141,7 +150,7 @@
             "title": "25 Pesetas (1992)",
             "country": "spain", 
             "composition": "Aluminium bronze ",
-            "url": "https://en.ucoin.net/coin/spain-25-pesetas-1990-1991/?tid=9206",
+            "url": "https://en.ucoin.net/coin/spain-25-pesetas-1991/?cid=9207",
             "code": "1992s"
         },        
         {
@@ -213,7 +222,7 @@
             "title": "1 dollar (2000)",
             "country": "australia", 
             "composition": "Aluminium-Bronze",
-            "url": "https://en.ucoin.net/coin/australia-1-dollar-2000/?tid=84297",
+            "url": "https://en.ucoin.net/coin/australia-1-dollar-2000/?cid=103086&vid=29122",
             "code": "2000s"
         },
         {
@@ -312,7 +321,7 @@
             "title": "50 Pence (2011)",
             "country": "united kingdom", 
             "composition": "Copper-nickel",
-            "url": "https://en.ucoin.net/coin/united_kingdom-50-pence-2009-2011/?tid=14165",
+            "url": "https://en.ucoin.net/coin/united_kingdom-50-pence-2011/?cid=14165",
             "code": "2012s"
         },
         {
@@ -336,10 +345,10 @@
         {
             "src1": "coins/russia-25-rubles-2014-1-1.jpg ",
             "src2": "coins/russia-25-rubles-2014-1-2.jpg ",
-            "title": "25 Rubles (2011)",
+            "title": "25 Rubles (2012)",
             "country": "russia",
             "composition": "Copper-nickel",
-            "url": "https://en.ucoin.net/coin/russia-25-rubles-2011-2014/?tid=11408",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2012/?cid=16150",
             "code": "2014w"
         },
         {
@@ -348,7 +357,7 @@
             "title": "25 Rubles (2014)",
             "country": "russia",
             "composition": "Copper-nickel",
-            "url": "https://en.ucoin.net/coin/russia-25-rubles-2012-2014/?tid=16150",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2012/?cid=16150",
             "code": "2014w"
         },
         {
@@ -363,10 +372,10 @@
         {
             "src1": "coins/russia-25-rubles-2014-4-1.jpg ",
             "src2": "coins/russia-25-rubles-2014-4-2.jpg ",
-            "title": "25 Rubles (2014)",
+            "title": "25 Rubles (2013)",
             "country": "russia",
             "composition": "Copper-nickel",
-            "url": "https://en.ucoin.net/coin/russia-25-rubles-2013-2014/?tid=21397",
+            "url": "https://en.ucoin.net/coin/russia-25-rubles-2013/?cid=21397",
             "code": "2014w"
         },
         {

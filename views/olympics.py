@@ -61,6 +61,7 @@ class Olympics():
                         PopupMenuItem(text="View: Olympics",data='0', on_click=self.select_view),
                         PopupMenuItem(text="View: Countries",data='1', on_click=self.select_view),
                         PopupMenuItem(text="View: Coins",data='2', on_click=self.select_view),
+                        PopupMenuItem(text="About",data='3', on_click=self.show_about_modal),
                     ]
                     )
                 ],
@@ -265,7 +266,34 @@ class Olympics():
         e.control.checked = not e.control.checked
         self.page.update()
 
- 
+    def show_about_modal(self,e):
+        def close_dlg(e):
+            dlg_modal.open = False
+            self.page.update()
+
+        # Создание виджета изображения для модального окна
+        image = flet.Image(src='icons/logo1.png', width=200, height=200) 
+        
+        # Создание модального окна с изображением
+        dlg_modal = flet.AlertDialog(
+            modal=True,
+            title=flet.Text("About"),
+            content=flet.Column([image,flet.ListTile(title=flet.Text(
+                "My coins collection"), subtitle=
+                flet.Text(
+                    spans=[ flet.TextSpan(
+                    "Instagram: @eduardserdiukov", 
+                    flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
+                    url="https://www.instagram.com/eduardserdiukov", ),],size=10,),
+            )],alignment=flet.MainAxisAlignment.CENTER,horizontal_alignment=flet.CrossAxisAlignment.CENTER,height=300,),
+            actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
+            actions_alignment=flet.MainAxisAlignment.END,
+        )            
+        # Отображение модального окна
+        self.page.dialog = dlg_modal
+        dlg_modal.open = True
+        self.page.update() 
+
     def view(self):
         return 	self.main_view
 
@@ -295,6 +323,7 @@ class Olympics():
                 #title=Text("Просмотр изображения"),
                 content=image,
                 actions=[TextButton("Close", on_click=lambda e: close_dlg(e))],
+                actions_alignment=MainAxisAlignment.END,
             )            
             # Отображение модального окна
             self.page.dialog = dlg_modal
