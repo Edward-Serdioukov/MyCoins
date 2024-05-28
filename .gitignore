@@ -2,9 +2,7 @@ mycoins.xlsx
 output_with_images.xlsx
 proxy/urls_and_prices.csv
 proxy/urls_and_prices.xlsx
-proxy/scrap_prices.by.py
 proxy/free-proxy.py
 proxy/excel_to_json.py
 proxy/edit_excel.py
-proxy/create_excel_with_images.py
 output.xlsx

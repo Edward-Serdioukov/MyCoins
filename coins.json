@@ -42,7 +42,7 @@
             "title": "100 Yen (1972)",
             "country": "japan",  
             "composition": "Copper-nickel (75% Copper, 25% Nickel) ",
-            "url": "https://en.ucoin.net/coin/germany-10-mark-1972/?cid=10213&vid=3597",
+            "url": "https://en.ucoin.net/coin/japan-100-yen-1972/?tid=2510",
             "code": "1972w"
         },
         {
@@ -73,10 +73,19 @@
             "code": "1976s"
         },
         {
+            "src1": "coins/ussr-5-rubles-1977.jpg  ",
+            "src2": "coins/ussr-5-rubles-1977-2.jpg  ",
+            "title": "5 Rubles (1977)",
+            "country": "ussr",  
+            "composition": "Silver (.900)",
+            "url": "https://en.ucoin.net/coin/ussr-5-rubles-1977/?tid=15078",
+            "code": "1980s"
+        },
+        {
             "src1": "coins/ussr-1-ruble-1977-(1980).jpg  ",
             "src2": "coins/ussr-1-ruble-1977-(1980)-2.jpg  ",
             "title": "1 Ruble (1977)",
-            "country": "russia",  
+            "country": "ussr",  
             "composition": "Copper Nickel Zinc",
             "url": "https://en.ucoin.net/coin/ussr-1-ruble-1977/?tid=4195",
             "code": "1980s"
@@ -91,6 +100,15 @@
             "code": "1980s"
         },
         {
+            "src1": "coins/yugoslavia-100-dinara-1984.jpg",
+            "src2": "coins/yugoslavia-100-dinara-1984-2.jpg",
+            "title": "100 Dinara (1982)",
+            "country": "yugoslavia",  
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/yugoslavia-100-dinara-1982/?tid=33102",
+            "code": "1984w"
+        },
+        {
             "src1": "coins/cuba-1-peso-1984w.jpg",
             "src2": "coins/cuba-1-peso-1984w-2.jpg",
             "title": "1 Peso (1983)",
@@ -100,6 +118,15 @@
             "code": "1984w"
         },
         {
+            "src1": "coins/usa-1-dollar-1983.jpg ",
+            "src2": "coins/usa-1-dollar-1983-2.jpg ",
+            "title": "1 Dollar (1983)",
+            "country": "usa", 
+            "composition": "Silver (.900)",
+            "url": "https://en.ucoin.net/coin/usa-1-dollar-1983/?cid=21533&vid=8774",
+            "code": "1984s"
+        },
+        {
             "src1": "coins/cuba-1-peso-1984.jpg ",
             "src2": "coins/cuba-1-peso-1984-2.jpg  ",
             "title": "1 Peso (1983)",
@@ -107,6 +134,15 @@
             "composition": "Copper-nickel",
             "url": "https://en.ucoin.net/coin/cuba-1-peso-1983/?tid=38519",
             "code": "1984s"
+        },
+        {
+            "src1": "coins/canada-20-dollars-1988.jpg",
+            "src2": "coins/canada-20-dollars-1988-2.jpg",
+            "title": "20 Dollars (1986)",
+            "country": "canada",  
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/canada-20-dollars-1986/?cid=73548&vid=22560",
+            "code": "1988w"
         },
         {
             "src1": "coins/cuba-1-peso-1988w.jpg",
@@ -145,9 +181,27 @@
             "code": "1988s"
         },
         {
+            "src1": "coins/france-100-francs-1992.jpg ",
+            "src2": "coins/france-100-francs-1992-2.jpg ",
+            "title": "100 Francs (1989)",
+            "country": "france", 
+            "composition": "Silver (.900)",
+            "url": "https://en.ucoin.net/coin/france-100-francs-1989/?tid=39200",
+            "code": "1992w"
+        },
+        {
+            "src1": "coins/spain-2000-pesetas-1992.jpg ",
+            "src2": "coins/spain-2000-pesetas-1992-2.jpg ",
+            "title": "2000 Pesetas (1990)",
+            "country": "spain", 
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/spain-2000-pesetas-1990/?cid=49510&vid=48764",
+            "code": "1992s"
+        },       
+        {
             "src1": "coins/spain-25-pesetas-1992s.jpg ",
             "src2": "coins/spain-25-pesetas-1992s-2.jpg ",
-            "title": "25 Pesetas (1992)",
+            "title": "25 Pesetas (1991)",
             "country": "spain", 
             "composition": "Aluminium bronze ",
             "url": "https://en.ucoin.net/coin/spain-25-pesetas-1991/?cid=9207",
@@ -161,6 +215,15 @@
             "composition": "Copper-nickel",
             "url": "https://en.ucoin.net/coin/portugal-200-escudos-1992/?tid=16932",
             "code": "1992s"
+        },
+        {
+            "src1": "coins/norway-100-kroner-1994.jpg",
+            "src2": "coins/norway-100-kroner-1994-2.jpg",
+            "title": "100 Kroner (1993)",
+            "country": "norway", 
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/norway-100-kroner-1993/?tid=48739",
+            "code": "1994w"
         },
         {
             "src1": "coins/poland-20000-zlotych-1994w.jpg",
@@ -181,12 +244,21 @@
             "code": "1994w"
         },
         {
-            "src1": "coins/ukraine-2000000-karbovantsiv-1996.jpg ",
-            "src2": "coins/ukraine-2000000-karbovantsiv-1996-2.jpg ",
-            "title": "2000000 Karbovantsiv (1996)",
+            "src1": "coins/usa-1-dollar-1996.jpg ",
+            "src2": "coins/usa-1-dollar-1996-2.jpg ",
+            "title": "1 Dollar (1996)",
+            "country": "usa", 
+            "composition": "Silver (.900)",
+            "url": "https://en.ucoin.net/coin/usa-1-dollar-1996/?cid=45513&vid=15387",
+            "code": "1996s"
+        },
+        {
+            "src1": "coins/ukraine-200000-karbovantsiv-1996.jpg ",
+            "src2": "coins/ukraine-200000-karbovantsiv-1996-2.jpg ",
+            "title": "200000 Karbovantsiv (1996)",
             "country": "ukraine", 
-            "composition": "Silver (.925)",
-            "url": "https://en.ucoin.net/coin/ukraine-2000000-karbovantsiv-1996/?tid=25789",
+            "composition": "Copper-Nickel",
+            "url": "https://en.ucoin.net/coin/ukraine-200000-karbovantsiv-1996/?tid=10072",
             "code": "1996s"
         },        
         {
@@ -253,6 +325,15 @@
             "code": "2004s"
         },
         {
+            "src1": "coins/latvia-1-lat-2006.jpg   ",
+            "src2": "coins/latvia-1-lat-2006-2.jpg ",
+            "title": "1 Lat (2005)",
+            "country": "latvia", 
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/latvia-1-lats-2005/?tid=32248",
+            "code": "2006w"
+        },
+        {
             "src1": "coins/italy-2-euro-2006.jpg   ",
             "src2": "coins/italy-2-euro-2006-2.jpg ",
             "title": "2 Euro (2006)",
@@ -287,6 +368,15 @@
             "composition": "Brass",
             "url": "https://en.ucoin.net/coin/poland-2-zlote-2008/?tid=8599",
             "code": "2008s"
+        },
+        {
+            "src1": "coins/canada-25-dollars-2010.jpg ",
+            "src2": "coins/canada-25-dollars-2010-2.jpg ",
+            "title": "25 Dollars (2008)",
+            "country": "canada", 
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/canada-25-dollars-2008/?tid=53001",
+            "code": "2010w"
         },
         {
             "src1": "coins/canada-1-dollar-2010.jpg ",
@@ -341,6 +431,15 @@
             "composition": "",
             "url": "https://en.ucoin.net/coin/poland-2-zlote-2012/?tid=16560",
             "code": "2012s"
+        },
+        {
+            "src1": "coins/russia-3-rubles-2014.jpg ",
+            "src2": "coins/russia-3-rubles-2014-2.jpg ",
+            "title": "3 Rubles (2014)",
+            "country": "russia",
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/russia-3-rubles-2014/?tid=20024",
+            "code": "2014w"
         },
         {
             "src1": "coins/russia-25-rubles-2014-1-1.jpg ",
@@ -505,6 +604,15 @@
             "code": "2016s"
         },
         {
+            "src1": "coins/south-korea-5000-won-2016.jpg ",
+            "src2": "coins/south-korea-5000-won-2016-2.jpg ",
+            "title": "5000 Won (2016)",
+            "country": "south korea",
+            "composition": "Silver (.999)",
+            "url": "https://en.ucoin.net/coin/south_korea-5000-won-2016/?tid=145648",
+            "code": "2018w"
+        },
+        {
             "src1": "coins/ukraine-2-hryvni-2018.jpg ",
             "src2": "coins/ukraine-2-hryvni-2018-2.jpg ",
             "title": "2 Hryvni (2018)",
@@ -521,6 +629,15 @@
             "composition": "Nickel plated steel",
             "url": "https://en.ucoin.net/coin/transnistria-1-ruble-2017/?tid=75727",
             "code": "2018w"
+        },
+        {
+            "src1": "coins/lithuania-20-euro-2020.jpg",
+            "src2": "coins/lithuania-20-euro-2020-2.jpg ",
+            "title": "20 Euro (2021)",
+            "country": "lithuania",
+            "composition": "Silver (.925)",
+            "url": "https://en.ucoin.net/coin/lithuania-20-euro-2021/?tid=109408",          
+            "code": "2020s"
         },
         {
             "src1": "coins/japan-100-yen-2020.jpg",
@@ -622,39 +739,21 @@
             "code": "2022w"
         },
         {
+            "src1": "coins/france-10-euro-2024.jpg",
+            "src2": "coins/france-10-euro-2024-2.jpg",
+            "title": "10 Euro (2021)",
+            "country": "france",
+            "composition": "Silver (.999)",
+            "url": "https://en.ucoin.net/coin/france-10-euro-2021/?tid=129769",
+            "code": "2024s"
+        },
+        {
             "src1": "coins/france-2-euro-2024-1.jpg",
             "src2": "coins/france-2-euro-2024.jpg",
             "title": "2 Euro (2021)",
             "country": "france",
             "composition": "Bimetallic: nickel brass)",
             "url": "https://en.ucoin.net/coin/france-2-euro-2021/?tid=120529",
-            "code": "2024s"
-        },
-        {
-            "src1": "coins/france-2-euro-2024-2.jpg",
-            "src2": "coins/france-2-euro-2024.jpg",
-            "title": "2 Euro (2022)",
-            "country": "france",
-            "composition": "Bimetallic: nickel brass)",
-            "url": "https://en.ucoin.net/coin/france-2-euro-2022/?tid=134640",
-            "code": "2024s"
-        },
-        {
-            "src1": "coins/france-2-euro-2024-3.jpg",
-            "src2": "coins/france-2-euro-2024.jpg",
-            "title": "2 Euro (2023)",
-            "country": "france",
-            "composition": "Bimetallic: nickel brass)",
-            "url": "https://en.ucoin.net/coin/france-2-euro-2023/?tid=145365",
-            "code": "2024s"
-        },
-        {
-            "src1": "coins/france-2-euro-2024-4.jpg",
-            "src2": "coins/france-2-euro-2024.jpg",
-            "title": "2 Euro (2024)",
-            "country": "france",
-            "composition": "Bimetallic: nickel brass)",
-            "url": "https://en.ucoin.net/coin/france-2-euro-2024/?tid=161045",
             "code": "2024s"
         }
     

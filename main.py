@@ -6,6 +6,7 @@ from flet import Page
 from views.olympics import Olympics
 
 
+
 #logging.basicConfig(level=logging.DEBUG)
 
 
@@ -74,5 +75,5 @@ def main(page: Page):
 
 #flet.app(target=main, assets_dir="assets", view=WEB_BROWSER, upload_dir="assets\images", port=55432)
 #
-flet.app(target=main, assets_dir="assets", view=flet.WEB_BROWSER)
+flet.app(target=main, assets_dir="assets")
 

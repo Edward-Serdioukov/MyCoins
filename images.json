@@ -1,7 +1,7 @@
 [   
      {
         "src": "/images/2024_Summer_Olympics_Logo.png",
-        "title": "Paris 2024 (3...)",
+        "title": "Paris 2024 (2)",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/paris-2024",
         "games": "XXXIII Summer Olympics",
@@ -25,8 +25,8 @@
     },
     {
         "src": "/images/olimpiada-2018-phenchhan-5.jpg",
-        "title": "Phenchhan 2018 (2)",
-        "color": "yellow",
+        "title": "Phenchhan 2018 (3)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/pyeongchang-2018",
         "games": "XXIII Winter Olympics",
         "code": "2018w"
@@ -57,7 +57,7 @@
     },
     {
         "src": "images/Vancouver2010_logo.png",
-        "title": "Vancouver 2010 (3)",
+        "title": "Vancouver 2010 (3...)",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/vancouver-2010",
         "games": "XXI Winter Olympics",
@@ -73,7 +73,7 @@
     },
     {
         "src": "images/578px-Olympische_Winterspiele_2006_logo.svg_.png",
-        "title": "Torino 2006 (1)",
+        "title": "Torino 2006 (2)",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/turin-2006",
         "games": "XX Winter Olympics",
@@ -113,23 +113,23 @@
     },
     {
         "src": "images/220px-1996_Summer_Olympics.svg_.png",
-        "title": "Atlanta 1996 (3)",
-        "color": "yellow",
+        "title": "Atlanta 1996 (3...)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/atlanta-1996",
         "games": "XXVI Summer Olympics",
         "code": "1996s"
     },
     {
         "src": "images/Lillehammer1994.jpg",
-        "title": "Lillehammer 1994 (2)",
-        "color": "yellow",
+        "title": "Lillehammer 1994 (3)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/lillehammer-1994",
         "games": "XVII Winter Olympics",
         "code": "1994w"
     },
     {
         "src": "images/571px-1992summerolympicslogo.svg_.png",
-        "title": "Barcelona 1992 (2)",
+        "title": "Barcelona 1992 (3)",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/barcelona-1992",
         "games": "XXV Summer Olympics",
@@ -137,8 +137,8 @@
     },
     {
         "src": "images/391px-Olympia_1992_Albertville.svg_.png",
-        "title": "Albertville 1992 (0)",
-        "color": "red",
+        "title": "Albertville 1992 (1)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/albertville-1992",
         "games": "XVI Winter Olympics",
         "code": "1992w"
@@ -153,31 +153,31 @@
     },
     {
         "src": "images/Calgary1988.jpg",
-        "title": "Calgary 1988 (1)",
-        "color": "yellow",       
+        "title": "Calgary 1988 (2)",
+        "color": "green",       
         "url": "https://olympics.com/en/olympic-games/calgary-1988",
         "games": "XV Winter Olympics",
         "code": "1988w"
     },
     {
         "src": "images/losangeles1984.gif",
-        "title": "Los Angeles 1984 (1)",
-        "color": "yellow",
+        "title": "Los Angeles 1984 (2)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/los-angeles-1984",
         "games": "XXIII Summer Olympics",
         "code": "1984s"
     },
     {
         "src": "images/347px-1984_Winter_Olympics_logo.svg_.png",
-        "title": "Sarajevo 1984 (1)",
-        "color": "yellow",
+        "title": "Sarajevo 1984 (2)",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/sarajevo-1984",
         "games": "XIV Winter Olympics",
         "code": "1984w"
     },
     {
         "src": "images/1980S_emblem_b.png",
-        "title": "Moscow 1980 (2)",
+        "title": "Moscow 1980 (3)",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/moscow-1980",
         "games": "XXII Summer Olympics",
@@ -256,4 +256,4 @@
         "code": "1964w"
     }        
 
-    ]
+]

@@ -26,8 +26,6 @@ from flet import (
     Stack,
     Tabs,
     Tab,
-    DataTable
-    
 )
 import flet
 
@@ -61,6 +59,7 @@ class Olympics():
                         PopupMenuItem(text="View: Olympics",data='0', on_click=self.select_view),
                         PopupMenuItem(text="View: Countries",data='1', on_click=self.select_view),
                         PopupMenuItem(text="View: Coins",data='2', on_click=self.select_view),
+                        PopupMenuItem(text="Statistics",data='4', on_click=self.show_stats_modal),
                         PopupMenuItem(text="About",data='3', on_click=self.show_about_modal),
                     ]
                     )
@@ -79,6 +78,8 @@ class Olympics():
                   Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="green", tooltip="Green")),
                   Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="yellow", tooltip="Yellow")),
                   Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="red", tooltip="Red")),
+                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="grey", tooltip="Silver")),
+                  Tab(tab_content=""),#Icon(icons.SIGNAL_CELLULAR_NO_SIM_OUTLINED, color="grey", tooltip="Not Silver")),
                   ],
         )
 
@@ -128,6 +129,7 @@ class Olympics():
         # Список картинок и надписей
         # Путь к вашему JSON файлу
         filename = 'images.json'
+        filename2 = 'coins.json'
 
         # Чтение данных из файла и их загрузка в список словарей
         with open(filename, 'r') as f:
@@ -142,10 +144,25 @@ class Olympics():
             color = "yellow"    
         elif self.filter.selected_index == 3:
             color = "red"
+
               
         # Фильтрация элементов по заданному коду
         if not color == "":
             self.images = [item for item in data if item['color'] == color]
+        elif self.filter.selected_index == 4:
+            color = "silver"
+            with open(filename2, 'r') as f:
+                data2 = json.load(f)
+            coins = [item['code'] for item in data2 if "Silver".lower() in item['composition'].lower()]
+            self.images = [item for item in data if item['code'] in coins]
+        elif self.filter.selected_index == 5:
+            color = "silver"
+            with open(filename2, 'r') as f:
+                data2 = json.load(f)
+            coins = [item['code'] for item in data2 if "Silver".lower() in item['composition'].lower()]
+            self.images = [item for item in data if item['code'] not in coins]
+ 
+            
 
         items = self.get_cards() 
         self.gallery.controls = items
@@ -241,7 +258,7 @@ class Olympics():
 
         self.page.update()
 
-    def  select_view(self, e):
+    def select_view(self, e):
         self.selected_view = e.control.data
         self.refresher()
    
@@ -265,6 +282,58 @@ class Olympics():
     def check_item_clicked(self, e):
         e.control.checked = not e.control.checked
         self.page.update()
+
+    def show_stats_modal(self,e):
+        def close_dlg(e):
+            dlg_modal.open = False
+            self.page.update()
+
+        with open('coins.json', 'r') as f:
+            data1 = json.load(f)
+        coins = len(data1)
+        with open('images.json', 'r') as f:
+            data2 = json.load(f)
+        olympics = len(data2)
+        with open('countries.json', 'r') as f:
+            data3 = json.load(f)
+        contries = len(data3)
+        silver_coins = [item['code'] for item in data1 if "Silver".lower() in  item['composition'].lower()]
+        olympics_silver = [item for item in data2 if item['code'] in silver_coins]
+
+        # Создание модального окна с изображением
+        dlg_modal = flet.AlertDialog(
+            modal=True,
+            title=flet.Text("Statistics"),
+            content=Container(height=250, 
+                              content=Column([
+                                Row([
+                                    self.create_cell_with_border("Coins", 150, 50), 
+                                    self.create_cell_with_border(str(coins), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                                Row([
+                                    self.create_cell_with_border("Olympics", 150, 50), 
+                                    self.create_cell_with_border(str(olympics), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                                Row([
+                                    self.create_cell_with_border("Countries", 150, 50), 
+                                    self.create_cell_with_border(str(contries), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                                Row([
+                                    self.create_cell_with_border("Silver Olympics", 150, 50), 
+                                    self.create_cell_with_border(str(len(olympics_silver)), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                                Row([
+                                    self.create_cell_with_border("Silver coins", 150, 50), 
+                                    self.create_cell_with_border(str(len(silver_coins)), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                            ], spacing=0,),border=flet.border.all(color=flet.colors.BLACK, width=1),padding=0,),
+            actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
+            actions_alignment=flet.MainAxisAlignment.END,
+        )            
+        # Отображение модального окна
+        self.page.dialog = dlg_modal
+        dlg_modal.open = True
+        self.page.update() 
 
     def show_about_modal(self,e):
         def close_dlg(e):
@@ -297,18 +366,20 @@ class Olympics():
     def view(self):
         return 	self.main_view
 
+    # Функция для создания ячейки таблицы с границей
+    def create_cell_with_border(self, text, width=150, height=100):
+        return Container(
+            expand=True,
+            content=Text(text),
+            width=width,
+            height=height,
+            padding=5,
+            alignment=flet.alignment.center,
+            border=flet.border.all(color=flet.colors.BLACK, width=1),  # Настройка границы для каждой ячейки
+        )
+    
     def details_view(self):
-        # Функция для создания ячейки таблицы с границей
-        def create_cell_with_border(text):
-            return Container(
-                expand=True,
-                content=Text(text),
-                width=150,
-                height=100,
-                padding=5,
-                alignment=flet.alignment.center,
-                border=flet.border.all(color=flet.colors.BLACK, width=1),  # Настройка границы для каждой ячейки
-               )
+
         def show_image_modal(e):
             def close_dlg(e):
                 dlg_modal.open = False
@@ -373,12 +444,12 @@ class Olympics():
                                  Container(Image(src=img["src2"], width=125, height=125,), on_click=lambda e: show_image_modal(e),)]),
                             Container(Column([
                                 Row([
-                                    create_cell_with_border("Denomination"), 
-                                    create_cell_with_border(img['title']),
+                                    self.create_cell_with_border("Denomination"), 
+                                    self.create_cell_with_border(img['title']),
                                 ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
                                 Row([
-                                    create_cell_with_border("Composition"), 
-                                    create_cell_with_border(img['composition']),
+                                    self.create_cell_with_border("Composition"), 
+                                    self.create_cell_with_border(img['composition']),
                                 ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
                             ], spacing=0),border=flet.border.all(color=flet.colors.BLACK, width=1),)
                             ], 

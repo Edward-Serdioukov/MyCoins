@@ -22,7 +22,7 @@
         "url": "https://olimp-history.ru/node/368",
         "country": "belarus",
         "code": ""
-    },
+    },    
     {
         "src": "/countries/flag-brazil.jpg",
         "title": "Brazil",
@@ -85,6 +85,30 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "italy",
+        "code": ""
+    },
+    {
+        "src": "/countries/flag-latvia.jpg",
+        "title": "Latvia",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "latvia",
+        "code": ""
+    },
+    {
+        "src": "/countries/flag-litva.jpg",
+        "title": "Lithuania",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "lithuania",
+        "code": ""
+    },
+    {
+        "src": "/countries/flag-norway.jpg",
+        "title": "Norway",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "norway",
         "code": ""
     },
     {
@@ -166,16 +190,30 @@
         "url": "https://olimp-history.ru/node/368",
         "country": "united kingdom",
         "code": ""
+    },
+    {
+        "src": "/countries/flag-usa.jpg",
+        "title": "USA",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "usa",
+        "code": ""
+    },
+    {
+        "src": "/countries/flag-ussr.jpg",
+        "title": "USSR",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "ussr",
+        "code": ""
+    },
+    {
+        "src": "/countries/flag-yugoslavia.png",
+        "title": "Yugoslavia",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "yugoslavia",
+        "code": ""
     }
 
-
-
-
-
-
-
-
-
-
- 
-    ]
+]
