@@ -233,7 +233,7 @@
     },
     {
         "src": "images/1968W_emblem_b.gif",
-        "title": "Grenoble 1968 (0)",
+        "title": "Grenoble 1968 (1)",
         "color": "red",
         "url": "https://olympics.com/en/olympic-games/grenoble-1968",
         "games": "X Winter Olympics",
@@ -254,6 +254,14 @@
         "url": "https://olympics.com/en/olympic-games/innsbruck-1964",
         "games": "IX Winter Olympics",
         "code": "1964w"
-    }        
+    },      
+    {
+        "src": "images/olympic1952.gif",
+        "title": "Helsinki 1952 (0)",
+        "color": "red",
+        "url": "https://olympics.com/en/olympic-games/helsinki-1952",
+        "games": "XV Summer Olympics",
+        "code": "1952s"
+    }    
 
 ]

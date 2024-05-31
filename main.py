@@ -10,6 +10,7 @@ from views.olympics import Olympics
 #logging.basicConfig(level=logging.DEBUG)
 
 
+
 def main(page: Page):
 
     olympics = Olympics(page)
@@ -73,7 +74,7 @@ def main(page: Page):
 
     page.go("/olympics")
 
-#flet.app(target=main, assets_dir="assets", view=WEB_BROWSER, upload_dir="assets\images", port=55432)
+flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
 #
-flet.app(target=main, assets_dir="assets")
+#flet.app(target=main, assets_dir="assets")
 

@@ -26,10 +26,12 @@ from flet import (
     Stack,
     Tabs,
     Tab,
+    Markdown,
 )
 import flet
 
 from views.coins import Coins
+
 
 class Olympics():
 
@@ -91,6 +93,7 @@ class Olympics():
             tabs=[Tab(text="All"), 
                   Tab(text="Silver"),
                   Tab(text="Euro"),
+                  Tab(text="Token"),
                   ],
         )
 
@@ -194,6 +197,8 @@ class Olympics():
             self.images = [item for item in data if "Silver".lower() in  item['composition'].lower()]
         elif self.filter_coins.selected_index == 2:
             self.images = [item for item in data if "Euro".lower() in  item['title'].lower()]  
+        elif self.filter_coins.selected_index == 3:
+            self.images = [item for item in data if "Token".lower() in  item['title'].lower()]
 
         items = self.get_cards_coinsview() 
         self.gallery.controls = items
@@ -299,12 +304,14 @@ class Olympics():
         contries = len(data3)
         silver_coins = [item['code'] for item in data1 if "Silver".lower() in  item['composition'].lower()]
         olympics_silver = [item for item in data2 if item['code'] in silver_coins]
+        tokens = [item['code'] for item in data1 if "Token".lower() in  item['title'].lower()]
+        coins = coins - len(tokens)
 
         # Создание модального окна с изображением
         dlg_modal = flet.AlertDialog(
             modal=True,
             title=flet.Text("Statistics"),
-            content=Container(height=250, 
+            content=Container(height=300, 
                               content=Column([
                                 Row([
                                     self.create_cell_with_border("Coins", 150, 50), 
@@ -325,6 +332,10 @@ class Olympics():
                                 Row([
                                     self.create_cell_with_border("Silver coins", 150, 50), 
                                     self.create_cell_with_border(str(len(silver_coins)), 150, 50),
+                                ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
+                                Row([
+                                    self.create_cell_with_border("Tokens", 150, 50), 
+                                    self.create_cell_with_border(str(len(tokens)), 150, 50),
                                 ], alignment=flet.MainAxisAlignment.CENTER, spacing=0),
                             ], spacing=0,),border=flet.border.all(color=flet.colors.BLACK, width=1),padding=0,),
             actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
@@ -386,13 +397,15 @@ class Olympics():
                 self.page.update()
 
             # Создание виджета изображения для модального окна
-            image = Image(src=e.control.content.src, width=400, height=400)  # Замените на ваш путь к изображению
-            
+            image = Image(src=e.control.content.src, width=300, height=300)  # Замените на ваш путь к изображению
+            #description = Container( Markdown(coins[0]['description'],selectable=True), width=400, padding=10)
+            description = Container( Text(coins[0]['description'], no_wrap=False, size=14), width=400, padding=10)
+
             # Создание модального окна с изображением
             dlg_modal = AlertDialog(
                 modal=True,
                 #title=Text("Просмотр изображения"),
-                content=image,
+                content=Container(Column([image,description],alignment=flet.MainAxisAlignment.START,horizontal_alignment=flet.CrossAxisAlignment.CENTER,scroll=flet.ScrollMode.ALWAYS,),),
                 actions=[TextButton("Close", on_click=lambda e: close_dlg(e))],
                 actions_alignment=MainAxisAlignment.END,
             )            
@@ -424,6 +437,8 @@ class Olympics():
         #print(f"SEV - {str_name}")
         # Фильтрация элементов по заданному коду
         coins = [item for item in data if item[str_name] == str_value]
+
+
 
         appbar = AppBar(
                 title=Text(self.image_title),
