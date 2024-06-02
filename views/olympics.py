@@ -362,9 +362,9 @@ class Olympics():
                 "My coins collection"), subtitle=
                 flet.Text(
                     spans=[ flet.TextSpan(
-                    "Instagram: @eduardserdiukov", 
+                    "e-mail: mycoins92@gmail.com", 
                     flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
-                    url="https://www.instagram.com/eduardserdiukov", ),],size=10,),
+                    url="mailto: mycoins92@gmail.com", ),],size=10,),
             )],alignment=flet.MainAxisAlignment.CENTER,horizontal_alignment=flet.CrossAxisAlignment.CENTER,height=300,),
             actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
             actions_alignment=flet.MainAxisAlignment.END,
