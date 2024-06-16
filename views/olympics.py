@@ -276,6 +276,11 @@ class Olympics():
 
     def get_cards_countries(self):
 
+        with open('coins.json', 'r') as f:
+            coins = json.load(f)
+        # Подсчет количества изображений с одинаковым кодом
+        code_counts = {img['country']: sum(1 for item in coins if item['country'] == img['country']) for img in self.images}
+
         # Создание галереи картинок
         return [
             Column(
@@ -289,6 +294,10 @@ class Olympics():
                             Text(img["title"], weight=FontWeight.BOLD),
                         ], 
                         spacing=1, alignment="center"),
+                        Row([
+                            Text(f" ({code_counts[img['country']]})", weight=FontWeight.BOLD, size="small"),
+                        ], 
+                        spacing=0, alignment="center"),
                     ], 
                     horizontal_alignment="center",
                     alignment="center"),
