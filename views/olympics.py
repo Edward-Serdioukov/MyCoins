@@ -27,6 +27,13 @@ from flet import (
     Tabs,
     Tab,
     Markdown,
+    MarkdownExtensionSet,
+    BarChart,
+    BarChartGroup,
+    ChartAxis,
+    BarChartRod,
+    ChartAxisLabel,
+    ChartGridLines,
 )
 import flet
 
@@ -39,15 +46,23 @@ class Olympics():
         self.page = page    
         self.page.theme_mode = ThemeMode.LIGHT
         self.selected_view = '0'
- 
+        """
+        self.gallery = ResponsiveRow(
+            controls=[],
+            #run_spacing=5,
+            #spacing=5,
+            #columns=18,
+        )
+        """
         self.gallery = GridView(
             runs_count=1,
-            max_extent=220,
-            child_aspect_ratio=1.0,
+            max_extent=200,
+            child_aspect_ratio=0.7,
             spacing=5,
             run_spacing=5,
             controls=[],         
-        )       
+        )     
+        
         self.appbar = AppBar(
                 leading=Icon(flet.icons.PALETTE),
                 leading_width=40,
@@ -61,6 +76,7 @@ class Olympics():
                         PopupMenuItem(text="View: Olympics",data='0', on_click=self.select_view),
                         PopupMenuItem(text="View: Countries",data='1', on_click=self.select_view),
                         PopupMenuItem(text="View: Coins",data='2', on_click=self.select_view),
+                        PopupMenuItem(text="Information",data='5', on_click=self.information_clicked),
                         PopupMenuItem(text="Statistics",data='4', on_click=self.show_stats_modal),
                         PopupMenuItem(text="About",data='3', on_click=self.show_about_modal),
                     ]
@@ -103,12 +119,26 @@ class Olympics():
         self.image_code = ""
         self.image_country = ""
         self.image_games = ""
-        self.ctrl = [self.appbar, self.filter, self.gallery,]
+        self.ctrl = [self.appbar, self.filter, Container(content=self.gallery, alignment=flet.alignment.top_center, padding=10)]
+
         self.main_view = View(
             route="/olympics",
             scroll=flet.ScrollMode.AUTO,
             controls=self.ctrl
+            #js=[Javascript(analytics_script)]
 			)
+        # Insert Google Analytics script
+        analytics_script = """
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED2BNEW5E2"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ED2BNEW5E2');
+            </script>
+        """
 
     def tabs_changed(self, e):
         self.refresher()
@@ -168,7 +198,8 @@ class Olympics():
             
 
         items = self.get_cards() 
-        self.gallery.controls = items
+        self.gallery.controls=items
+
 
     def grid_countries(self):
         # Список картинок и надписей
@@ -179,7 +210,7 @@ class Olympics():
         with open(filename, 'r') as f:
             self.images = json.load(f)
  
-        items = self.get_cards() 
+        items = self.get_cards_countries() 
         self.gallery.controls = items
 
     def grid_coins(self):
@@ -204,52 +235,93 @@ class Olympics():
         self.gallery.controls = items
 
 
-
     def get_cards(self):
+        with open('coins.json', 'r') as f:
+            coins = json.load(f)
+        # Подсчет количества изображений с одинаковым кодом
+        code_counts = {img['code']: sum(1 for item in coins if item['code'] == img['code']) for img in self.images}
+
         # Создание галереи картинок
-        return  [
-                Card(
-                    width=400,
-                    height=600,
-                    color= colors.WHITE,
-                    elevation=1,  # Уровень тени
+        return [
+            Column(
+                #col={"sm": 6, "md": 4, "xl": 1.5},
+                controls=[Card(
+                elevation=1,  # Уровень тени
+                content=Container(
+                        content=Column([
+                            Image(src=img["src"], width=105, height=105),
+                            Row([
+                                Text(img["title"], weight=FontWeight.BOLD, size="small"),
+                                #Text(f" ({code_counts[img['code']]})", weight=FontWeight.BOLD)
+                            ], 
+                            spacing=0, alignment="center"),
+                            Row([
+                                Text(f" ({code_counts[img['code']]})", weight=FontWeight.BOLD, size="small"),
+                            ], 
+                            spacing=0, alignment="center"),
+                            ], 
+                            horizontal_alignment="center",
+                            #expand=1,
+                            alignment="center"
+                        ),  
 
-                    content= Container( Column([
-                            Image(src=img["src"], width=100, height=100),
-                            Row([Text(img["title"], weight=FontWeight.BOLD),], 
-                                spacing=1,alignment="center"),
+                    padding=10,
+                    data=img,
+                    on_click=self.on_image_click,
+                    width=200,
+                    #height=200,
+                ),)], #height=100,width=100,
+            ) for img in self.images
+        ]
 
+    def get_cards_countries(self):
+
+        # Создание галереи картинок
+        return [
+            Column(
+                #col={"sm": 6, "md": 4, "xl": 1.5},
+                controls=[Card(
+                elevation=1,  # Уровень тени
+                content=Container(
+                    Column([
+                        Image(src=img["src"], width=110, height=110),
+                        Row([
+                            Text(img["title"], weight=FontWeight.BOLD),
+                        ], 
+                        spacing=1, alignment="center"),
                     ], 
                     horizontal_alignment="center",
                     alignment="center"),
-                    #padding=10,
+                    padding=10,
                     data=img,
-                    on_click= self.on_image_click
-                    ),
-                ) for img in self.images
-            ]
+                    on_click=self.on_image_click,
+                    width=300,
+                ),)]
+            ) for img in self.images
+        ]
+
 
     def get_cards_coinsview(self):
         # Создание галереи картинок
         return  [
-                Card(
-                    width=400,
-                    height=600,
-                    color= colors.WHITE,
+            Column(
+                #col={"sm": 6, "md": 4, "xl": 1.5},
+                controls=[Card(
                     elevation=1,  # Уровень тени
-
-                    content= Container( Column([
-                            Image(src=img["src1"], width=105, height=105),
+                    content= Container(
+                        Column([
+                            Image(src=img["src1"], width=115, height=115),
                             Row([Text(img["title"], weight=FontWeight.BOLD),], 
                                 spacing=1,alignment="center"),
 
                     ], 
                     horizontal_alignment="center",
                     alignment="center"),
-                    #padding=10,
+                    padding=10,
                     data=img,
-                    on_click= self.on_image_click
-                    ),
+                    on_click= self.on_image_click,
+                    width=300,
+                    ),)]
                 ) for img in self.images
             ]
 
@@ -266,6 +338,7 @@ class Olympics():
     def select_view(self, e):
         self.selected_view = e.control.data
         self.refresher()
+        self.page.go("/olympics")
    
 
     # Обработчик нажатия на картинку
@@ -282,6 +355,9 @@ class Olympics():
         self.image_url = e.control.data["url"]
         self.image_code = e.control.data["code"]
         self.page.go("/details")
+
+    def information_clicked(self, e):
+        self.page.go("/information")
   
 
     def check_item_clicked(self, e):
@@ -514,10 +590,111 @@ class Olympics():
             controls=[
                 appbar,
                 #ElevatedButton(text="Back", on_click=back_button_clicked),
-                Container(Column([detail_content, details_gallery,], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER,),
+                Row(controls=[Column([detail_content, details_gallery,], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER,),],
+                alignment=MainAxisAlignment.CENTER,  wrap=True, width=self.page.width,
                           )
             ]
         )
 
+    def information_view(self):
+        md1 = """
+        ## Links
 
+        [inline-style](https://www.google.com)
+        """
+        return View(
+            route="/information",
+            scroll=flet.ScrollMode.AUTO,
+            controls=[
+                self.appbar,
+                Row(controls=[Column([
+                    Markdown("# Some Useful Information", selectable=True,) ,
+                    Markdown(
+                            "[__Olympic Games Information__](https://olympics.com/en/)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),   
+                    Markdown(
+                            "[__Winter Olympic coins__](https://en.wikipedia.org/wiki/Winter_Olympic_coins)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),
+                    Markdown(
+                            "[__Summer Olympic coins__](https://en.wikipedia.org/wiki/Summer_Olympic_coins)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),  
+                    Markdown(
+                            "[__Numista, coin & token catalog__](https://en.numista.com/)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ), 
+                    Markdown(
+                            "[__uCoin, coin catalog__](https://en.ucoin.net/)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),   
 
+                ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER, ), 
+                    
+                ], 
+                      
+                   alignment=MainAxisAlignment.CENTER,     
+                )
+            ]
+        )
+    
+    def mychart1(self):
+        # Создание данных для диаграммы
+        data = [
+            BarChartGroup(
+                label="Category 1",
+                bars=[BarChartRod(
+                        from_y=0,
+                        to_y=60,
+                        width=40,
+                        color=colors.ORANGE,
+                        tooltip="Orange",
+                        border_radius=0,
+
+                )]
+            ),
+            BarChartGroup(
+                label="Category 2",
+                bars=[BarChartRod(
+                        from_y=0,
+                        to_y=60,
+                        width=40,
+                        color=colors.ORANGE,
+                        tooltip="Orange",
+                        border_radius=0,
+
+                )]
+            ),
+            BarChartGroup(
+                bars=[BarChartRod(
+                        from_x=0,
+                        to_x=40,
+                        width=40,
+                        color=colors.ORANGE,
+                        tooltip="Orange",
+                        border_radius=0,
+
+                )]
+            )
+        ]
+
+        # Создание диаграммы
+        chart = BarChart(
+            data=data,
+            vertical=False,  # Настройка диаграммы на горизонтальную ориентацию, если поддерживается
+            width=600,
+            height=400,
+        )
+        return chart
+    

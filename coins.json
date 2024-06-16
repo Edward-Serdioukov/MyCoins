@@ -88,6 +88,16 @@
         "url": "https://en.ucoin.net/coin/canada-10-dollars-1973/?cid=37486",
         "code": "1976s",
         "description": ""
+    },    
+    {
+        "src1": "coins/poland-200-zlotych-1980.jpg",
+        "src2": "coins/poland-200-zlotych-1980-2.jpg",
+        "title": "200 Zlotych (1980)",
+        "country": "poland",
+        "composition": "Silver (.750)",
+        "url": "https://en.ucoin.net/coin/poland-200-zlotych-1980/?tid=32183",
+        "code": "1980w",
+        "description": ""
     },
     {
         "src1": "coins/ussr-5-rubles-1977.jpg",
@@ -177,6 +187,16 @@
         "composition": "Copper-nickel",
         "url": "https://en.ucoin.net/coin/cuba-1-peso-1986/?tid=41377",
         "code": "1988w",
+        "description": ""
+    },
+    {
+        "src1": "coins/south_korea-5000-won-1987.jpg",
+        "src2": "coins/south_korea-5000-won-1987-2.jpg",
+        "title": "5000 Won (1987)",
+        "country": "south korea",
+        "composition": "Silver (.925)",
+        "url": "https://en.ucoin.net/coin/south_korea-5000-won-1987/?tid=38410",
+        "code": "1988s",
         "description": ""
     },
     {
@@ -357,6 +377,16 @@
         "composition": "Silver (.925)",
         "url": "https://en.ucoin.net/coin/belarus-20-rubles-2001/?tid=19137",
         "code": "2002w",
+        "description": ""
+    },
+    {
+        "src1": "coins/greece-10-euro-2004.jpg",
+        "src2": "coins/greece-10-euro-2004-2.jpg",
+        "title": "10 Euro (2004)",
+        "country": "greece",
+        "composition": "Silver (.925)",
+        "url": "https://en.ucoin.net/coin/greece-10-euro-2004/?tid=62964",
+        "code": "2004s",
         "description": ""
     },
     {

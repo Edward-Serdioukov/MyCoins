@@ -1,7 +1,14 @@
 [   
-     {
+    {
+        "src": "/images/2026_Winter_Olympics_logo.png",
+        "title": "Milan Cortina 2026",
+        "color": "red",
+        "url": "https://milanocortina2026.olympics.com/en",
+        "games": "XXV Winter Olympics",
+        "code": "2026w"
+    },{
         "src": "/images/2024_Summer_Olympics_Logo.png",
-        "title": "Paris 2024 (2)",
+        "title": "Paris 2024",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/paris-2024",
         "games": "XXXIII Summer Olympics",
@@ -9,7 +16,7 @@
     },
     {
         "src": "/images/beijing-olympic-logo2.jpg",
-        "title": "Beijing 2022 (2)",
+        "title": "Beijing 2022",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/beijing-2022",
         "games": "XXIV Winter Olympics",
@@ -17,7 +24,7 @@
     },
     {
         "src": "/images/tokyo_2020_0.jpg",
-        "title": "Tokyo 2020 (3...)",
+        "title": "Tokyo 2020",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/tokyo-2020",
         "games": "XXXII Summer Olympics",
@@ -25,7 +32,7 @@
     },
     {
         "src": "/images/olimpiada-2018-phenchhan-5.jpg",
-        "title": "Phenchhan 2018 (3)",
+        "title": "Phenchhan 2018",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/pyeongchang-2018",
         "games": "XXIII Winter Olympics",
@@ -33,7 +40,7 @@
     },
     {
         "src": "images/Rio2016_logo.jpg",
-        "title": "Rio 2016 (3...)",
+        "title": "Rio 2016",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/rio-2016",
         "games": "XXXI Summer Olympics",
@@ -41,7 +48,7 @@
     },
     {
         "src": "images/sochi_2014.jpg",
-        "title": "Sochi 2014 (3...)",
+        "title": "Sochi 2014",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sochi-2014",
         "games": "XXII Winter Olympics",
@@ -49,7 +56,7 @@
     },
     {
         "src": "images/london_2012.jpg",
-        "title": "London 2012 (3)",
+        "title": "London 2012",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/london-2012",
         "games": "XXX Summer Olympics",
@@ -57,7 +64,7 @@
     },
     {
         "src": "images/Vancouver2010_logo.png",
-        "title": "Vancouver 2010 (3...)",
+        "title": "Vancouver 2010",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/vancouver-2010",
         "games": "XXI Winter Olympics",
@@ -65,7 +72,7 @@
     },
     {
         "src": "images/220px-Beijing_2008_Olympics_logo.svg_.png",
-        "title": "Beijing 2008 (3)",
+        "title": "Beijing 2008",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/beijing-2008",
         "games": "XXIX Summer Olympics",
@@ -73,7 +80,7 @@
     },
     {
         "src": "images/578px-Olympische_Winterspiele_2006_logo.svg_.png",
-        "title": "Torino 2006 (2)",
+        "title": "Torino 2006",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/turin-2006",
         "games": "XX Winter Olympics",
@@ -81,7 +88,7 @@
     },
     {
         "src": "images/372px-Athens_2004_logo.svg_.png",
-        "title": "Athens 2004 (1)",
+        "title": "Athens 2004",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/athens-2004",
         "games": "XXVIII Summer Olympics",
@@ -89,7 +96,7 @@
     },
     {
         "src": "images/450px-Olympische_Spiele_Salt_Lake_City_2002.svg_.png",
-        "title": "Salt Lake City 2002 (1)",
+        "title": "Salt Lake City 2002",
         "color": "yellow",
         "url": "https://olympics.com/en/olympic-games/salt-lake-city-2002",
         "games": "XIX Winter Olympics",
@@ -97,7 +104,7 @@
     },
     {
         "src": "images/483px-Olympische_Spiele_Sydney_2000.svg_.png",
-        "title": "Sydney 2000 (2)",
+        "title": "Sydney 2000",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sydney-2000",
         "games": "XXVII Summer Olympics",
@@ -105,7 +112,7 @@
     },
     {
         "src": "images/401px-1998_Winter_Olympics_logo.svg_.png",
-        "title": "Nagano 1998 (1)",
+        "title": "Nagano 1998",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/nagano-1998",
         "games": "XVIII Winter Olympics",
@@ -113,7 +120,7 @@
     },
     {
         "src": "images/220px-1996_Summer_Olympics.svg_.png",
-        "title": "Atlanta 1996 (3...)",
+        "title": "Atlanta 1996",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/atlanta-1996",
         "games": "XXVI Summer Olympics",
@@ -121,7 +128,7 @@
     },
     {
         "src": "images/Lillehammer1994.jpg",
-        "title": "Lillehammer 1994 (3)",
+        "title": "Lillehammer 1994",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/lillehammer-1994",
         "games": "XVII Winter Olympics",
@@ -129,7 +136,7 @@
     },
     {
         "src": "images/571px-1992summerolympicslogo.svg_.png",
-        "title": "Barcelona 1992 (3)",
+        "title": "Barcelona 1992",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/barcelona-1992",
         "games": "XXV Summer Olympics",
@@ -137,7 +144,7 @@
     },
     {
         "src": "images/391px-Olympia_1992_Albertville.svg_.png",
-        "title": "Albertville 1992 (1)",
+        "title": "Albertville 1992",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/albertville-1992",
         "games": "XVI Winter Olympics",
@@ -145,7 +152,7 @@
     },
     {
         "src": "images/266px-Seoul_1988_Olympics_logo.svg_.png",
-        "title": "Seoul 1988 (3)",
+        "title": "Seoul 1988",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/seoul-1988",
         "games": "XXIV Summer Olympics",
@@ -153,7 +160,7 @@
     },
     {
         "src": "images/Calgary1988.jpg",
-        "title": "Calgary 1988 (2)",
+        "title": "Calgary 1988",
         "color": "green",       
         "url": "https://olympics.com/en/olympic-games/calgary-1988",
         "games": "XV Winter Olympics",
@@ -161,7 +168,7 @@
     },
     {
         "src": "images/losangeles1984.gif",
-        "title": "Los Angeles 1984 (2)",
+        "title": "Los Angeles 1984",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/los-angeles-1984",
         "games": "XXIII Summer Olympics",
@@ -169,7 +176,7 @@
     },
     {
         "src": "images/347px-1984_Winter_Olympics_logo.svg_.png",
-        "title": "Sarajevo 1984 (2)",
+        "title": "Sarajevo 1984",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sarajevo-1984",
         "games": "XIV Winter Olympics",
@@ -177,7 +184,7 @@
     },
     {
         "src": "images/1980S_emblem_b.png",
-        "title": "Moscow 1980 (3)",
+        "title": "Moscow 1980",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/moscow-1980",
         "games": "XXII Summer Olympics",
@@ -185,7 +192,7 @@
     },
     {
         "src": "images/318px-1980_Winter_Olympics_emblem.svg_.png",
-        "title": "Lake Placid 1980 (0)",
+        "title": "Lake Placid 1980",
         "color": "red",
         "url": "https://olympics.com/en/olympic-games/lake-placid-1980",
         "games": "XIII Winter Olympics",
@@ -193,7 +200,7 @@
     },
     {
         "src": "images/olympic1976.gif",
-        "title": "Montreal 1976 (1)",
+        "title": "Montreal 1976",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/montreal-1976",
         "games": "XXI Summer Olympics",
@@ -201,7 +208,7 @@
     },
     {
         "src": "images/1976W_emblem_b.gif",
-        "title": "Innsbruck 1976 (1)",
+        "title": "Innsbruck 1976",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/innsbruck-1976",
         "games": "XII Winter Olympics",
@@ -209,7 +216,7 @@
     },
     {
         "src": "images/292px-1972_Summer_Olympics_emblem.svg_.png",
-        "title": "Munchen 1972 (1)",
+        "title": "Munchen 1972",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/munich-1972",
         "games": "XX Summer Olympics",
@@ -217,7 +224,7 @@
     },
     {
         "src": "images/1972_sapporo_logo_0.jpg",
-        "title": "Sapporo 1972 (1)",
+        "title": "Sapporo 1972",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sapporo-1972",
         "games": "XI Winter Olympics",
@@ -225,7 +232,7 @@
     },
     {
         "src": "images/800px-Mexico-68.svg_.png",
-        "title": "Mexico 1968 (1)",
+        "title": "Mexico 1968",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/mexico-city-1968",
         "games": "XIX Summer Olympics",
@@ -233,15 +240,15 @@
     },
     {
         "src": "images/1968W_emblem_b.gif",
-        "title": "Grenoble 1968 (1)",
-        "color": "red",
+        "title": "Grenoble 1968",
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/grenoble-1968",
         "games": "X Winter Olympics",
         "code": "1968w"
     },
     {
         "src": "images/Tokyo1964.jpg",
-        "title": "Tokyo 1964 (2)",
+        "title": "Tokyo 1964",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/tokyo-1964",
         "games": "XVIII Summer Olympics",
@@ -249,7 +256,7 @@
     },
     {
         "src": "images/1964W_emblem_b.gif",
-        "title": "Innsbruck 1964 (1)",
+        "title": "Innsbruck 1964",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/innsbruck-1964",
         "games": "IX Winter Olympics",
@@ -257,7 +264,7 @@
     },      
     {
         "src": "images/olympic1952.gif",
-        "title": "Helsinki 1952 (0)",
+        "title": "Helsinki 1952",
         "color": "red",
         "url": "https://olympics.com/en/olympic-games/helsinki-1952",
         "games": "XV Summer Olympics",

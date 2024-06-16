@@ -23,6 +23,8 @@ def main(page: Page):
         if page.route == "/details":
             page.views.append(olympics_view)
             page.views.append(olympics.details_view())
+        if page.route == "/information":
+            page.views.append(olympics.information_view())
 
         page.update()
 
@@ -74,7 +76,7 @@ def main(page: Page):
 
     page.go("/olympics")
 
-flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
+#flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
 #
-#flet.app(target=main, assets_dir="assets")
+flet.app(target=main, assets_dir="assets")
 
