@@ -15,6 +15,8 @@ def main(page: Page):
 
     olympics = Olympics(page)
     olympics_view = olympics.view()
+    olympics_map = olympics.olympics_map_view()
+    countries_map = olympics.countries_map_view()
 
     def route_change(route):
         page.views.clear()
@@ -25,6 +27,16 @@ def main(page: Page):
             page.views.append(olympics.details_view())
         if page.route == "/information":
             page.views.append(olympics.information_view())
+        if page.route == "/olympics_map":
+            page.views.append(olympics_map)
+        if page.route == "/details_olympic_map":
+            page.views.append(olympics_map)
+            page.views.append(olympics.details_view())
+        if page.route == "/countries_map":
+            page.views.append(countries_map)
+        if page.route == "/details_country_map":
+            page.views.append(countries_map)
+            page.views.append(olympics.details_view())
 
         page.update()
 

@@ -5,7 +5,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "australia",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": -25.274398, "longitude": 133.775136},
+        "avatar": "/countries/avatars/australia.png"
     },
     {
         "src": "/countries/flag-austria.jpg",
@@ -13,7 +15,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "austria",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 47.516231, "longitude": 14.550072},
+        "avatar": "/countries/avatars/austria.png"
     },    
     {
         "src": "/countries/flag-belarus.jpg",
@@ -21,7 +25,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "belarus",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 53.709807, "longitude": 27.953389},
+        "avatar": "/countries/avatars/belarus.png"
     },    
     {
         "src": "/countries/flag-brazil.jpg",
@@ -29,7 +35,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "brazil",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": -14.235004, "longitude": -51.92528},
+        "avatar": "/countries/avatars/brazil.png"
     },
     {
         "src": "/countries/flag-canada.jpg",
@@ -37,7 +45,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "canada",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 56.130366, "longitude": -106.346771},
+        "avatar": "/countries/avatars/canada.png"
     },
     {
         "src": "/countries/flag-china.jpg",
@@ -45,7 +55,19 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "china",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 35.86166, "longitude": 104.195397},
+        "avatar": "/countries/avatars/china.png"
+    },
+    {
+        "src": "/countries/flag-cuba.jpg",
+        "title": "Cuba",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "cuba",
+        "code": "",
+        "coordinates": {"latitude": 21.521757, "longitude": -77.781167},
+        "avatar": "/countries/avatars/cuba.png"
     },
     {
         "src": "/countries/flag-france.jpg",
@@ -53,7 +75,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "france",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 46.603354, "longitude": 1.888334},
+        "avatar": "/countries/avatars/france.png"
     },
     {
         "src": "/countries/flag-germany.jpg",
@@ -61,7 +85,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "germany",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 51.165691, "longitude": 10.451526},
+        "avatar": "/countries/avatars/germany.png"
     },
     {
         "src": "/countries/flag-greece.jpg",
@@ -69,7 +95,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "greece",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 39.074208, "longitude": 21.824312},
+        "avatar": "/countries/avatars/greece.png"
     },
     {
         "src": "/countries/flag-japan.jpg",
@@ -77,7 +105,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "japan",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 36.204824, "longitude": 138.252924},
+        "avatar": "/countries/avatars/japan.png"
     },
     {
         "src": "/countries/flag-italy.jpg",
@@ -85,7 +115,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "italy",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 41.87194, "longitude": 12.56738},
+        "avatar": "/countries/avatars/italy.png"
     },
     {
         "src": "/countries/flag-latvia.jpg",
@@ -93,7 +125,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "latvia",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 56.879635, "longitude": 24.603189},
+        "avatar": "/countries/avatars/latvia.png"
     },
     {
         "src": "/countries/flag-litva.jpg",
@@ -101,7 +135,19 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "lithuania",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 55.169438, "longitude": 23.881275},
+        "avatar": "/countries/avatars/lithuania.png"
+    },   
+    {
+        "src": "/countries/flag-mexico.jpg",
+        "title": "Mexico",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "mexico",
+        "code": "",
+        "coordinates": {"latitude": 23.634501, "longitude": -102.552784},
+        "avatar": "/countries/avatars/mexico.png"
     },
     {
         "src": "/countries/flag-norway.jpg",
@@ -109,7 +155,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "norway",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 60.472024, "longitude": 8.468946},
+        "avatar": "/countries/avatars/norway.png"
     },
     {
         "src": "/countries/flag-poland.jpg",
@@ -117,7 +165,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "poland",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 51.919438, "longitude": 19.145136},
+        "avatar": "/countries/avatars/poland.png"
     },
     {
         "src": "/countries/flag-portugal.jpg",
@@ -125,7 +175,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "portugal",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 39.399872, "longitude": -8.224454},
+        "avatar": "/countries/avatars/portugal.png"
     },
     {
         "src": "/countries/flag-pridnestroy.jpg",
@@ -133,7 +185,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "pridnestroy",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 47.067788, "longitude": 28.916817},
+        "avatar": "/countries/avatars/moldova.png"
     },
     {
         "src": "/countries/flag-romania.jpg",
@@ -141,7 +195,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "romania",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 45.943161, "longitude": 24.96676},
+        "avatar": "/countries/avatars/romania.png"
     },
     {
         "src": "/countries/flag-russia.jpg",
@@ -149,7 +205,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "russia",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 61.52401, "longitude": 70.318756},
+        "avatar": "/countries/avatars/rassia.png"
     },
     {
         "src": "/countries/flag-south-korea.jpg",
@@ -157,7 +215,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "south korea",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 35.907757, "longitude": 127.766922},
+        "avatar": "/countries/avatars/south_korea.png"
     },
     {
         "src": "/countries/flag-spain.jpg",
@@ -165,7 +225,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "spain",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 40.463667, "longitude": -3.74922},
+        "avatar": "/countries/avatars/spain.png"
     },
     {
         "src": "/countries/flag-turkey.jpg",
@@ -173,7 +235,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "turkey",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 38.963745, "longitude": 35.243322},
+        "avatar": "/countries/avatars/turkey.png"
     },
     {
         "src": "/countries/flag-ukraine.jpg",
@@ -181,7 +245,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "ukraine",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 48.379433, "longitude": 31.16558},
+        "avatar": "/countries/avatars/ukraine.png"
     },
     {
         "src": "/countries/flag-united-kingdom.jpg",
@@ -189,7 +255,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "united kingdom",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 55.378051, "longitude": -3.435973},
+        "avatar": "/countries/avatars/britain.png"
     },
     {
         "src": "/countries/flag-usa.jpg",
@@ -197,7 +265,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "usa",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 37.09024, "longitude": -95.712891},
+        "avatar": "/countries/avatars/usa.png"
     },
     {
         "src": "/countries/flag-ussr.jpg",
@@ -205,7 +275,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "ussr",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 61.52401, "longitude": 95.318756},
+        "avatar": "/countries/avatars/ussr2.png"
     },
     {
         "src": "/countries/flag-yugoslavia.png",
@@ -213,7 +285,9 @@
         "color": "green",
         "url": "https://olimp-history.ru/node/368",
         "country": "yugoslavia",
-        "code": ""
+        "code": "",
+        "coordinates": {"latitude": 44.016521, "longitude": 21.005859},
+        "avatar": "/countries/avatars/yugoslavia.png"
     }
-
 ]
+

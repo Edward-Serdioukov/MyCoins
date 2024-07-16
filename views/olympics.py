@@ -1,4 +1,6 @@
 import json
+import random
+import flet.map as map
 from flet import (
     View,
     Container,
@@ -34,10 +36,16 @@ from flet import (
     BarChartRod,
     ChartAxisLabel,
     ChartGridLines,
+    ListView,
 )
 import flet
 
 from views.coins import Coins
+from collections import Counter
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib.offsetbox import OffsetImage, AnnotationBbox
+from flet.matplotlib_chart import MatplotlibChart
 
 
 class Olympics():
@@ -74,7 +82,9 @@ class Olympics():
                     PopupMenuButton(
                     items=[
                         PopupMenuItem(text="View: Olympics",data='0', on_click=self.select_view),
+                        PopupMenuItem(text="View: Olympics Map",data='6', on_click=self.olympics_map_clicked),  
                         PopupMenuItem(text="View: Countries",data='1', on_click=self.select_view),
+                        PopupMenuItem(text="View: Countries Map",data='7', on_click=self.countries_map_clicked),  
                         PopupMenuItem(text="View: Coins",data='2', on_click=self.select_view),
                         PopupMenuItem(text="Information",data='5', on_click=self.information_clicked),
                         PopupMenuItem(text="Statistics",data='4', on_click=self.show_stats_modal),
@@ -127,6 +137,12 @@ class Olympics():
             controls=self.ctrl
             #js=[Javascript(analytics_script)]
 			)
+        
+        self.informations_listtiles = ListView(
+            spacing=True,
+            divider_thickness=1,
+
+        )
         # Insert Google Analytics script
         analytics_script = """
             <!-- Google tag (gtag.js) -->
@@ -365,9 +381,34 @@ class Olympics():
         self.image_code = e.control.data["code"]
         self.page.go("/details")
 
+    # Обработчик нажатия на маркер
+    def on_marker_click(self,e):
+        self.image_src = e.control.data["src"]
+        self.image_games = e.control.data["games"]    
+        self.image_title = e.control.data["title"]
+        self.image_url = e.control.data["url"]
+        self.image_code = e.control.data["code"]  
+        self.page.go("/details_olympic_map")
+
+    # Обработчик нажатия на маркер
+    def on_country_click(self,e):
+        self.image_src = e.control.data["src"]
+        self.image_country = e.control.data["country"]
+        self.image_title = e.control.data["title"]
+        self.image_url = e.control.data["url"]
+        self.image_code = e.control.data["code"]  
+        self.page.go("/details_country_map")
+
     def information_clicked(self, e):
         self.page.go("/information")
   
+    def olympics_map_clicked(self, e):
+        self.selected_view = e.control.data
+        self.page.go("/olympics_map")
+
+    def countries_map_clicked(self, e):
+        self.selected_view = e.control.data
+        self.page.go("/countries_map")
 
     def check_item_clicked(self, e):
         e.control.checked = not e.control.checked
@@ -509,10 +550,10 @@ class Olympics():
         str_name = ''
         str_value= ''
         #print(f"SEV: - {self.selected_view}")
-        if self.selected_view == '0':
+        if self.selected_view in {'0','6'}:
             str_name = 'code'
             str_value = self.image_code
-        elif self.selected_view == '1':
+        elif self.selected_view in {'1','7'}:
             str_name = 'country'
             str_value = self.image_country
         elif self.selected_view == '2':
@@ -566,7 +607,7 @@ class Olympics():
 
         # Создание контента для детального просмотра
         detail_content = None
-        if self.selected_view == '0':
+        if self.selected_view in {'0','6'}:
             detail_content = Column([
                 Image(src=self.image_src, width=200, height=200),
                 #Text(self.image_title, size=20),
@@ -611,12 +652,8 @@ class Olympics():
 
         [inline-style](https://www.google.com)
         """
-        return View(
-            route="/information",
-            scroll=flet.ScrollMode.AUTO,
-            controls=[
-                self.appbar,
-                Row(controls=[Column([
+        self.informations_listtiles.controls.clear()
+        links = Row(controls=[Column([
                     Markdown("# Some Useful Information", selectable=True,) ,
                     Markdown(
                             "[__Olympic Games Information__](https://olympics.com/en/)",
@@ -649,61 +686,252 @@ class Olympics():
                             on_tap_link=lambda e: self.page.launch_url(e.data),
                             ),   
 
-                ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER, ), 
-                    
-                ], 
-                      
-                   alignment=MainAxisAlignment.CENTER,     
-                )
+
+                ], alignment=MainAxisAlignment.CENTER,horizontal_alignment=CrossAxisAlignment.CENTER,  ),              
+                ], alignment=MainAxisAlignment.CENTER,     
+            )
+        self.informations_listtiles.controls.append(links)
+        ###self.mychart1()
+        ###self.informations_listtiles.controls.append(MatplotlibChart(figure=plt.gcf(), isolated=True, expand=True))
+        return View(
+            route="/information",
+            scroll=flet.ScrollMode.AUTO,
+            controls=[
+                self.appbar,
+                self.informations_listtiles,
             ]
         )
     
+   
     def mychart1(self):
-        # Создание данных для диаграммы
-        data = [
-            BarChartGroup(
-                label="Category 1",
-                bars=[BarChartRod(
-                        from_y=0,
-                        to_y=60,
-                        width=40,
-                        color=colors.ORANGE,
-                        tooltip="Orange",
-                        border_radius=0,
+        # Загрузка данных из JSON-файлов
+        with open('coins.json', 'r') as f:
+            coins_data = json.load(f)
 
-                )]
+        with open('countries.json', 'r') as f:
+            countries_data = json.load(f)
+
+        # Подсчет количества монет по странам
+        coin_counts = Counter(coin['country'] for coin in coins_data)
+
+        # Преобразование данных в DataFrame для удобства
+        coin_counts_df = pd.DataFrame(coin_counts.items(), columns=['country', 'count'])
+
+        # Преобразование данных о странах в DataFrame
+        countries_df = pd.DataFrame(countries_data)
+
+        # Приведение названий стран к единому формату (заглавные буквы)
+        coin_counts_df['country'] = coin_counts_df['country'].str.title()
+        countries_df['country'] = countries_df['country'].str.title()
+
+        # Объединение данных по странам
+        merged_df = pd.merge(coin_counts_df, countries_df, on='country', how='left')
+
+        # Сортировка данных по убыванию количества монет
+        sorted_df = merged_df.sort_values(by='count', ascending=False)
+
+        # Функция для добавления изображения флага
+        def get_flag_image(path, zoom=0.05):
+            if pd.notna(path):  # Проверяем, что путь к изображению не является NaN
+                try:
+                    image = plt.imread("assets"+path)
+                    return OffsetImage(image, zoom=zoom)
+                except FileNotFoundError:
+                    print(f"Файл не найден: {path}")
+                except Exception as e:
+                    print(f"Ошибка при загрузке флага: {e}")
+            return None
+
+        # Создание горизонтальной столбчатой диаграммы
+        fig, ax = plt.subplots(figsize=(12, 8))
+        bars = ax.barh(sorted_df['country'], sorted_df['count'], color='skyblue')
+
+        # Настройка диаграммы
+        ax.set_xlabel('Количество монет')
+        ax.set_ylabel('Страны')
+        ax.set_title('Количество монет по странам')
+        ax.invert_yaxis()  # Обратный порядок, чтобы максимальные значения были сверху
+
+        # Добавление названий стран и флагов
+        for i, (bar, (_, row)) in enumerate(zip(bars, sorted_df.iterrows())):
+            country_label = row['country']
+            flag_path = row['src']
+            bar_y_center = bar.get_y() + bar.get_height() / 2
+
+            # Добавление названия страны
+            ###ax.text(bar.get_width(), bar_y_center, f' {country_label}', va='center')
+
+            # Добавление флага после названия страны
+            """
+            flag_image = get_flag_image(flag_path)
+            if flag_image:
+                ab = AnnotationBbox(flag_image, (0, bar_y_center), frameon=False, xycoords="data", boxcoords="offset points", pad=0)
+                ax.add_artist(ab)
+            """
+        ###plt.show()
+
+        # Вывод данных в консоль
+        for _, row in sorted_df.iterrows():
+            print(f"{row['country']}: {row['count']}")
+
+    def olympics_map_view(self):
+
+        def show_image_modal(e):
+            def close_dlg(e):
+                dlg_modal.open = False
+                self.page.update()
+
+            # Создание виджета изображения для модального окна
+            image = Image(src=e.control.data["src"], width=300, height=300)  # Замените на ваш путь к изображению
+            #description = Container( Markdown(coins[0]['description'],selectable=True), width=400, padding=10)
+            description = Text(e.control.data["games"], no_wrap=False, size=20, weight=FontWeight.BOLD)
+            url = Text(spans=[ flet.TextSpan( e.control.data["title"], 
+                    flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
+                    url=e.control.data["url"], ),],size=20, weight=FontWeight.BOLD)
+
+            # Создание модального окна с изображением
+            dlg_modal = AlertDialog(
+                modal=True,
+                #title=Text("Просмотр изображения"),
+                content=Container(Column([image,description,url],alignment=flet.MainAxisAlignment.START,horizontal_alignment=flet.CrossAxisAlignment.CENTER,scroll=flet.ScrollMode.ALWAYS,),),
+                actions=[TextButton("Close", on_click=lambda e: close_dlg(e))],
+                actions_alignment=MainAxisAlignment.END,
+            )            
+            # Отображение модального окна
+            self.page.dialog = dlg_modal
+            dlg_modal.open = True
+            self.page.update()
+
+        with open('images.json', 'r') as f:
+            data = json.load(f)
+
+        marker_layer_ref = flet.Ref[map.MarkerLayer]()
+        circle_layer_ref = flet.Ref[map.CircleLayer]()
+
+
+        olympics_map = map.Map(
+            expand=True,
+            configuration=map.MapConfiguration(
+                initial_center=map.MapLatitudeLongitude(48, 2),
+                initial_zoom=3,
+                interaction_configuration=map.MapInteractionConfiguration(
+                    flags=map.MapInteractiveFlag.ALL
+                ),
+                on_init=lambda e: print(f"Initialized Map"),
+                #on_tap=handle_tap,
+                #on_secondary_tap=handle_tap,
+                #on_long_press=handle_tap,
+                #on_event=handle_event,
             ),
-            BarChartGroup(
-                label="Category 2",
-                bars=[BarChartRod(
-                        from_y=0,
-                        to_y=60,
-                        width=40,
-                        color=colors.ORANGE,
-                        tooltip="Orange",
-                        border_radius=0,
-
-                )]
-            ),
-            BarChartGroup(
-                bars=[BarChartRod(
-                        from_x=0,
-                        to_x=40,
-                        width=40,
-                        color=colors.ORANGE,
-                        tooltip="Orange",
-                        border_radius=0,
-
-                )]
-            )
-        ]
-
-        # Создание диаграммы
-        chart = BarChart(
-            data=data,
-            vertical=False,  # Настройка диаграммы на горизонтальную ориентацию, если поддерживается
-            width=600,
-            height=400,
+            layers=[
+                map.TileLayer(
+                    url_template="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    #url_template="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    on_image_error=lambda e: print("TileLayer Error"),
+                ),
+                map.MarkerLayer(
+                    ref=marker_layer_ref,
+                    markers=[
+                        
+                        map.Marker(
+                            content=flet.Tooltip(
+                                        message=img["title"],
+                                        content= IconButton(content=Icon(icons.LOCATION_ON, 
+                                                    color="red" if img["code"].endswith("s") else "blue",
+                                                    #tooltip=img["title"]
+                                                ),
+                                            alignment=flet.alignment.center,
+                                            icon_size=25,
+                                            data=img,
+                                            #on_click=lambda e: show_image_modal(e)
+                                            on_click=self.on_marker_click,
+                                        ),
+                
+                                        padding=20,
+                                        border_radius=10,
+                                        bgcolor=colors.WHITE,
+                                        text_style=flet.TextStyle(size=20, color=colors.BLACK),
+                                    ),
+                            coordinates=map.MapLatitudeLongitude(img["coordinates"]["lat"], img["coordinates"]["lon"]),
+                        ) for img in data
+                    ],
+                ), 
+            ],
         )
-        return chart
-    
+                                                            
+        return View(
+            route="/olympics_map",
+            #scroll=flet.ScrollMode.AUTO,
+            controls=[
+                self.appbar,
+                olympics_map,
+            ]
+        )
+
+    def countries_map_view(self):
+
+        with open('countries.json', 'r') as f:
+            data = json.load(f)
+
+        marker_layer_ref = flet.Ref[map.MarkerLayer]()
+        circle_layer_ref = flet.Ref[map.CircleLayer]()
+
+
+        countries_map = map.Map(
+            expand=True,
+            configuration=map.MapConfiguration(
+                initial_center=map.MapLatitudeLongitude(47, 13),
+                initial_zoom=3.5,
+                interaction_configuration=map.MapInteractionConfiguration(
+                    flags=map.MapInteractiveFlag.ALL
+                ),
+                on_init=lambda e: print(f"Initialized Map"),
+                #on_tap=handle_tap,
+                #on_secondary_tap=handle_tap,
+                #on_long_press=handle_tap,
+                #on_event=handle_event,
+            ),
+            layers=[
+                map.TileLayer(
+                    #url_template="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    url_template="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                    on_image_error=lambda e: print("TileLayer Error"),
+                ),
+                map.MarkerLayer(
+                    ref=marker_layer_ref,
+                    markers=[
+                        map.Marker(
+                            content=Container(image_src=img["avatar"], width=30, height=30, tooltip=img["title"],
+                                            data=img,
+
+                                            on_click=self.on_country_click,),
+                            coordinates=map.MapLatitudeLongitude(img["coordinates"]["latitude"], img["coordinates"]["longitude"]),
+                        ) for img in data
+                    ],
+                ), 
+            ],
+        )
+                                                            
+        return View(
+            route="/countries_map",
+            #scroll=flet.ScrollMode.AUTO,
+            controls=[
+                self.appbar,
+                countries_map,
+            ]
+        )
+
+
+
+    """    
+    IconButton(content=Icon(icons.LOCATION_ON, 
+                                        color="red" if img["code"].endswith("s") else "blue",
+                                        #tooltip=img["title"]
+                                    ),
+                        alignment=flet.alignment.center,
+                        icon_size=25,
+                        data=img,
+                        #on_click=lambda e: show_image_modal(e)
+                        on_click=self.on_marker_click,
+                        ),
+    """    

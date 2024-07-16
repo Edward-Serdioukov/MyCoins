@@ -1,18 +1,21 @@
-[   
+[
     {
         "src": "/images/2026_Winter_Olympics_logo.png",
         "title": "Milan Cortina 2026",
         "color": "red",
         "url": "https://milanocortina2026.olympics.com/en",
         "games": "XXV Winter Olympics",
-        "code": "2026w"
-    },{
+        "code": "2026w",
+        "coordinates": {"lat": 45.4642, "lon": 9.1900}
+    },
+    {
         "src": "/images/2024_Summer_Olympics_Logo.png",
         "title": "Paris 2024",
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/paris-2024",
         "games": "XXXIII Summer Olympics",
-        "code": "2024s"
+        "code": "2024s",
+        "coordinates": {"lat": 48.8566, "lon": 2.3522}
     },
     {
         "src": "/images/beijing-olympic-logo2.jpg",
@@ -20,7 +23,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/beijing-2022",
         "games": "XXIV Winter Olympics",
-        "code": "2022w"
+        "code": "2022w",
+        "coordinates": {"lat": 39.9042, "lon": 116.4074}
     },
     {
         "src": "/images/tokyo_2020_0.jpg",
@@ -28,7 +32,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/tokyo-2020",
         "games": "XXXII Summer Olympics",
-        "code": "2020s"
+        "code": "2020s",
+        "coordinates": {"lat": 35.6762, "lon": 139.6503}
     },
     {
         "src": "/images/olimpiada-2018-phenchhan-5.jpg",
@@ -36,7 +41,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/pyeongchang-2018",
         "games": "XXIII Winter Olympics",
-        "code": "2018w"
+        "code": "2018w",
+        "coordinates": {"lat": 37.6381, "lon": 128.7207}
     },
     {
         "src": "images/Rio2016_logo.jpg",
@@ -44,7 +50,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/rio-2016",
         "games": "XXXI Summer Olympics",
-        "code": "2016s"
+        "code": "2016s",
+        "coordinates": {"lat": -22.9068, "lon": -43.1729}
     },
     {
         "src": "images/sochi_2014.jpg",
@@ -52,7 +59,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sochi-2014",
         "games": "XXII Winter Olympics",
-        "code": "2014w"
+        "code": "2014w",
+        "coordinates": {"lat": 43.6028, "lon": 39.7342}
     },
     {
         "src": "images/london_2012.jpg",
@@ -60,7 +68,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/london-2012",
         "games": "XXX Summer Olympics",
-        "code": "2012s"
+        "code": "2012s",
+        "coordinates": {"lat": 51.5074, "lon": -0.1278}
     },
     {
         "src": "images/Vancouver2010_logo.png",
@@ -68,7 +77,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/vancouver-2010",
         "games": "XXI Winter Olympics",
-        "code": "2010w"
+        "code": "2010w",
+        "coordinates": {"lat": 49.2827, "lon": -123.1207}
     },
     {
         "src": "images/220px-Beijing_2008_Olympics_logo.svg_.png",
@@ -76,7 +86,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/beijing-2008",
         "games": "XXIX Summer Olympics",
-        "code": "2008s"
+        "code": "2008s",
+        "coordinates": {"lat": 39.9042, "lon": 116.4074}
     },
     {
         "src": "images/578px-Olympische_Winterspiele_2006_logo.svg_.png",
@@ -84,7 +95,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/turin-2006",
         "games": "XX Winter Olympics",
-        "code": "2006w"
+        "code": "2006w",
+        "coordinates": {"lat": 45.0703, "lon": 7.6869}
     },
     {
         "src": "images/372px-Athens_2004_logo.svg_.png",
@@ -92,7 +104,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/athens-2004",
         "games": "XXVIII Summer Olympics",
-        "code": "2004s"
+        "code": "2004s",
+        "coordinates": {"lat": 37.9838, "lon": 23.7275}
     },
     {
         "src": "images/450px-Olympische_Spiele_Salt_Lake_City_2002.svg_.png",
@@ -100,7 +113,8 @@
         "color": "yellow",
         "url": "https://olympics.com/en/olympic-games/salt-lake-city-2002",
         "games": "XIX Winter Olympics",
-        "code": "2002w"
+        "code": "2002w",
+        "coordinates": {"lat": 40.7608, "lon": -111.8910}
     },
     {
         "src": "images/483px-Olympische_Spiele_Sydney_2000.svg_.png",
@@ -108,7 +122,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sydney-2000",
         "games": "XXVII Summer Olympics",
-        "code": "2000s"
+        "code": "2000s",
+        "coordinates": {"lat": -33.8688, "lon": 151.2093}
     },
     {
         "src": "images/401px-1998_Winter_Olympics_logo.svg_.png",
@@ -116,7 +131,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/nagano-1998",
         "games": "XVIII Winter Olympics",
-        "code": "1998w"
+        "code": "1998w",
+        "coordinates": {"lat": 36.6513, "lon": 138.1810}
     },
     {
         "src": "images/220px-1996_Summer_Olympics.svg_.png",
@@ -124,7 +140,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/atlanta-1996",
         "games": "XXVI Summer Olympics",
-        "code": "1996s"
+        "code": "1996s",
+        "coordinates": {"lat": 33.7490, "lon": -84.3880}
     },
     {
         "src": "images/Lillehammer1994.jpg",
@@ -132,7 +149,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/lillehammer-1994",
         "games": "XVII Winter Olympics",
-        "code": "1994w"
+        "code": "1994w",
+        "coordinates": {"lat": 61.1153, "lon": 10.4663}
     },
     {
         "src": "images/571px-1992summerolympicslogo.svg_.png",
@@ -140,7 +158,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/barcelona-1992",
         "games": "XXV Summer Olympics",
-        "code": "1992s"
+        "code": "1992s",
+        "coordinates": {"lat": 41.3851, "lon": 2.1734}
     },
     {
         "src": "images/391px-Olympia_1992_Albertville.svg_.png",
@@ -148,7 +167,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/albertville-1992",
         "games": "XVI Winter Olympics",
-        "code": "1992w"
+        "code": "1992w",
+        "coordinates": {"lat": 45.6767, "lon": 6.3901}
     },
     {
         "src": "images/266px-Seoul_1988_Olympics_logo.svg_.png",
@@ -156,15 +176,17 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/seoul-1988",
         "games": "XXIV Summer Olympics",
-        "code": "1988s"
+        "code": "1988s",
+        "coordinates": {"lat": 37.5665, "lon": 126.9780}
     },
     {
         "src": "images/Calgary1988.jpg",
         "title": "Calgary 1988",
-        "color": "green",       
+        "color": "green",
         "url": "https://olympics.com/en/olympic-games/calgary-1988",
         "games": "XV Winter Olympics",
-        "code": "1988w"
+        "code": "1988w",
+        "coordinates": {"lat": 51.0447, "lon": -114.0719}
     },
     {
         "src": "images/losangeles1984.gif",
@@ -172,7 +194,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/los-angeles-1984",
         "games": "XXIII Summer Olympics",
-        "code": "1984s"
+        "code": "1984s",
+        "coordinates": {"lat": 34.0522, "lon": -118.2437}
     },
     {
         "src": "images/347px-1984_Winter_Olympics_logo.svg_.png",
@@ -180,7 +203,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sarajevo-1984",
         "games": "XIV Winter Olympics",
-        "code": "1984w"
+        "code": "1984w",
+        "coordinates": {"lat": 43.8563, "lon": 18.4131}
     },
     {
         "src": "images/1980S_emblem_b.png",
@@ -188,15 +212,17 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/moscow-1980",
         "games": "XXII Summer Olympics",
-        "code": "1980s"
+        "code": "1980s",
+        "coordinates": {"lat": 55.7558, "lon": 37.6173}
     },
     {
         "src": "images/318px-1980_Winter_Olympics_emblem.svg_.png",
         "title": "Lake Placid 1980",
-        "color": "red",
+        "color": "yellow",
         "url": "https://olympics.com/en/olympic-games/lake-placid-1980",
         "games": "XIII Winter Olympics",
-        "code": "1980w"
+        "code": "1980w",
+        "coordinates": {"lat": 44.2795, "lon": -73.9799}
     },
     {
         "src": "images/olympic1976.gif",
@@ -204,7 +230,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/montreal-1976",
         "games": "XXI Summer Olympics",
-        "code": "1976s"
+        "code": "1976s",
+        "coordinates": {"lat": 45.5017, "lon": -73.5673}
     },
     {
         "src": "images/1976W_emblem_b.gif",
@@ -212,7 +239,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/innsbruck-1976",
         "games": "XII Winter Olympics",
-        "code": "1976w"
+        "code": "1976w",
+        "coordinates": {"lat": 47.2892, "lon": 11.4241}
     },
     {
         "src": "images/292px-1972_Summer_Olympics_emblem.svg_.png",
@@ -220,7 +248,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/munich-1972",
         "games": "XX Summer Olympics",
-        "code": "1972s"
+        "code": "1972s",
+        "coordinates": {"lat": 48.1351, "lon": 11.5820}
     },
     {
         "src": "images/1972_sapporo_logo_0.jpg",
@@ -228,7 +257,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/sapporo-1972",
         "games": "XI Winter Olympics",
-        "code": "1972w"
+        "code": "1972w",
+        "coordinates": {"lat": 43.0618, "lon": 141.3545}
     },
     {
         "src": "images/800px-Mexico-68.svg_.png",
@@ -236,7 +266,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/mexico-city-1968",
         "games": "XIX Summer Olympics",
-        "code": "1968s"
+        "code": "1968s",
+        "coordinates": {"lat": 19.4326, "lon": -99.1332}
     },
     {
         "src": "images/1968W_emblem_b.gif",
@@ -244,7 +275,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/grenoble-1968",
         "games": "X Winter Olympics",
-        "code": "1968w"
+        "code": "1968w",
+        "coordinates": {"lat": 45.1885, "lon": 5.7245}
     },
     {
         "src": "images/Tokyo1964.jpg",
@@ -252,7 +284,8 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/tokyo-1964",
         "games": "XVIII Summer Olympics",
-        "code": "1964s"
+        "code": "1964s",
+        "coordinates": {"lat": 35.6762, "lon": 139.6503}
     },
     {
         "src": "images/1964W_emblem_b.gif",
@@ -260,15 +293,16 @@
         "color": "green",
         "url": "https://olympics.com/en/olympic-games/innsbruck-1964",
         "games": "IX Winter Olympics",
-        "code": "1964w"
-    },      
+        "code": "1964w",
+        "coordinates": {"lat": 47.2692, "lon": 11.4041}
+    },
     {
         "src": "images/olympic1952.gif",
         "title": "Helsinki 1952",
         "color": "red",
         "url": "https://olympics.com/en/olympic-games/helsinki-1952",
         "games": "XV Summer Olympics",
-        "code": "1952s"
-    }    
-
+        "code": "1952s",
+        "coordinates": {"lat": 60.1695, "lon": 24.9354}
+    }
 ]

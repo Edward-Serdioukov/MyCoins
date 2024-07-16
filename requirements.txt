@@ -1,2 +1,4 @@
-flet
+flet==0.23.0
+pandas
+matplotlib
 
