@@ -37,6 +37,8 @@ from flet import (
     ChartAxisLabel,
     ChartGridLines,
     ListView,
+    SubmenuButton,
+    MenuItemButton,
 )
 import flet
 
@@ -72,27 +74,42 @@ class Olympics():
         )     
         
         self.appbar = AppBar(
-                leading=Icon(flet.icons.PALETTE),
-                leading_width=40,
-                title=Text("Olympic Coins"),
-                center_title=False,
-                bgcolor=colors.SURFACE_VARIANT,
-                actions=[
-                    IconButton(icon = flet.icons.WB_SUNNY_OUTLINED, on_click=self.theme_changed),
-                    PopupMenuButton(
+            #leading=Icon(flet.icons.HOME),
+            leading=IconButton(
+                icon=flet.icons.HOME,
+                data='0',
+                on_click=self.select_view
+            ),
+            leading_width=40,
+            title=Text("Olympic Coins"),
+            center_title=False,
+            bgcolor=colors.SURFACE_VARIANT,
+            actions=[
+                IconButton(icon=flet.icons.WB_SUNNY_OUTLINED, on_click=self.theme_changed),
+                PopupMenuButton(
+                    icon=flet.icons.MENU,
                     items=[
-                        PopupMenuItem(text="View: Olympics",data='0', on_click=self.select_view),
-                        PopupMenuItem(text="View: Olympics Map",data='6', on_click=self.olympics_map_clicked),  
-                        PopupMenuItem(text="View: Countries",data='1', on_click=self.select_view),
-                        PopupMenuItem(text="View: Countries Map",data='7', on_click=self.countries_map_clicked),  
-                        PopupMenuItem(text="View: Coins",data='2', on_click=self.select_view),
-                        PopupMenuItem(text="Information",data='5', on_click=self.information_clicked),
-                        PopupMenuItem(text="Statistics",data='4', on_click=self.show_stats_modal),
-                        PopupMenuItem(text="About",data='3', on_click=self.show_about_modal),
+                        PopupMenuItem(text="  View: Olympics", data='0', on_click=self.select_view),
+                        PopupMenuItem(text="  View: Countries", data='1', on_click=self.select_view),
+                        PopupMenuItem(text="  View: Coins", data='2', on_click=self.select_view),
+                        PopupMenuItem(
+                            #text="View: Maps",
+                            content=SubmenuButton(content=Text("View: Maps ..."), 
+                                                   controls = [
+                                                        MenuItemButton(content=Text("Olympics Map"), data='6', on_click=self.olympics_map_clicked),
+                                                        MenuItemButton(content=Text("Countries Map"), data='7', on_click=self.countries_map_clicked),
+                            
+                                                 ])
+                            
+                        ),
+                        PopupMenuItem(), 
+                        PopupMenuItem(text="Information", data='5', on_click=self.information_clicked),
+                        PopupMenuItem(text="Statistics", data='4', on_click=self.show_stats_modal),
+                        PopupMenuItem(text="About", data='3', on_click=self.show_about_modal),
                     ]
-                    )
-                ],
-            )
+                )
+            ],
+        )
 
         # Создание галереи картинок
         #self.gallery2 =  Row(controls=items, wrap=True)
@@ -360,6 +377,11 @@ class Olympics():
 
         self.page.update()
 
+    def click_home(self, e):
+        self.selected_view = e.control.data
+        self.refresher()
+        self.page.go("/olympics")
+        
     def select_view(self, e):
         self.selected_view = e.control.data
         self.refresher()
@@ -681,6 +703,12 @@ class Olympics():
                             ), 
                     Markdown(
                             "[__uCoin, coin catalog__](https://en.ucoin.net/)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),   
+                    Markdown(
+                            "[__Coin grading__](https://en.wikipedia.org/wiki/Coin_grading)",
                             selectable=True,
                             extension_set=MarkdownExtensionSet.GITHUB_WEB,
                             on_tap_link=lambda e: self.page.launch_url(e.data),

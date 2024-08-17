@@ -888,5 +888,15 @@
         "url": "https://en.ucoin.net/coin/france-2-euro-2024/?tid=165667",
         "code": "2024s",
         "description": ""
+    },
+    {
+        "src1": "coins/portugal-2-euro-2024.jpg",
+        "src2": "coins/portugal-2-euro-2024-2.jpg",
+        "title": "2 Euro (2024)",
+        "country": "portugal",
+        "composition": "Bimetallic: nickel brass",
+        "url": "https://en.ucoin.net/coin/portugal-2-euro-2024/?tid=162971",
+        "code": "2024s",
+        "description": ""
     }
 ]
