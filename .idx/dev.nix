@@ -7,6 +7,7 @@
   packages = [
     pkgs.python3
     pkgs.jdk20
+    pkgs.apt
   ];
 
   # environment variables
