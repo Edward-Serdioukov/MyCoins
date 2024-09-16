@@ -810,7 +810,7 @@ class Olympics():
                 self.page.update()
 
             # Создание виджета изображения для модального окна
-            image = Image(src=e.control.data["src"], width=300, height=300)  # Замените на ваш путь к изображению
+            image = Image(src=e.control.data["src"], width=300, height=300)  
             #description = Container( Markdown(coins[0]['description'],selectable=True), width=400, padding=10)
             description = Text(e.control.data["games"], no_wrap=False, size=20, weight=FontWeight.BOLD)
             url = Text(spans=[ flet.TextSpan( e.control.data["title"], 
@@ -862,7 +862,40 @@ class Olympics():
                     markers=[
                         
                         map.Marker(
-                            content=flet.Tooltip(
+                            content=IconButton(content=Icon(icons.LOCATION_ON, 
+                                                    color="red" if img["code"].endswith("s") else "blue",
+                                                    #tooltip=img["title"]
+                                                ),
+                                            alignment=flet.alignment.center,
+                                            icon_size=25,
+                                            data=img,
+                                            #on_click=lambda e: show_image_modal(e)
+                                            on_click=self.on_marker_click,
+                                            tooltip=flet.Tooltip(
+                                                message=img["title"],
+                                                padding=20,
+                                                border_radius=10,
+                                                bgcolor=colors.WHITE,
+                                                text_style=flet.TextStyle(size=20, color=colors.BLACK),),
+                                            ),
+                            coordinates=map.MapLatitudeLongitude(img["coordinates"]["lat"], img["coordinates"]["lon"]),
+                        ) for img in data
+                    ],
+                ), 
+            ],
+        )
+                                                            
+        return View(
+            route="/olympics_map",
+            #scroll=flet.ScrollMode.AUTO,
+            controls=[
+                self.appbar,
+                olympics_map,
+            ]
+        )
+        
+    """
+    flet.Tooltip(
                                         message=img["title"],
                                         content= IconButton(content=Icon(icons.LOCATION_ON, 
                                                     color="red" if img["code"].endswith("s") else "blue",
@@ -880,21 +913,7 @@ class Olympics():
                                         bgcolor=colors.WHITE,
                                         text_style=flet.TextStyle(size=20, color=colors.BLACK),
                                     ),
-                            coordinates=map.MapLatitudeLongitude(img["coordinates"]["lat"], img["coordinates"]["lon"]),
-                        ) for img in data
-                    ],
-                ), 
-            ],
-        )
-                                                            
-        return View(
-            route="/olympics_map",
-            #scroll=flet.ScrollMode.AUTO,
-            controls=[
-                self.appbar,
-                olympics_map,
-            ]
-        )
+    """
 
     def countries_map_view(self):
 
