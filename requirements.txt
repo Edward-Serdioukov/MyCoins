@@ -82,7 +82,7 @@ mdurl==0.1.2
 ml-dtypes==0.4.0
 namex==0.0.8
 nest-asyncio==1.6.0
-numpy==2.0.1
+numpy
 oauthlib==3.2.2
 odc-geo==0.4.7
 odc-stac==0.3.10
