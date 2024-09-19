@@ -89,6 +89,6 @@ def main(page: Page):
     page.go("/olympics")
 #flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
 #
-flet.app(target=main, assets_dir="assets")
-#flet.app(main) ###flet run --web main.py
+#flet.app(target=main, assets_dir="assets")
+flet.app(main) ###flet run --web main.py
 
