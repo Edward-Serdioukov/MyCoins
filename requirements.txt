@@ -10,7 +10,7 @@ attrs
 binaryornot==0.4.4
 blinker==1.8.2
 branca==0.7.2
-cachetools==5.3.3
+cachetools
 certifi==2024.6.2
 cffi==1.16.0
 chardet==5.2.0
