@@ -62,9 +62,9 @@ def main(page: Page):
                 "My coins collection"), subtitle=
                 flet.Text(
                     spans=[ flet.TextSpan(
-                    "eduard.serdiukov@gmail.com", 
+                    "", 
                     flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
-                    url="mailto:eduard.serdiukov@gmail.com", ),],size=10,),
+                    url="", ),],size=10,),
                 #f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
             )],alignment=flet.MainAxisAlignment.CENTER,horizontal_alignment=flet.CrossAxisAlignment.CENTER,height=300,),
             actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
@@ -87,8 +87,8 @@ def main(page: Page):
     page.on_view_pop = view_pop
 
     page.go("/olympics")
-#flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
+flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
 #
 #flet.app(target=main, assets_dir="assets")
-flet.app(main) ###flet run --web main.py
+#flet.app(main) ###flet run --web main.py
 
