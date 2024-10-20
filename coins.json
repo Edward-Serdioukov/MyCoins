@@ -1,4 +1,14 @@
-[
+[   
+    {
+        "src1": "coins/finland-500-markkaa-1952.jpg",
+        "src2": "coins/finland-500-markkaa-1952-1.jpg",
+        "title": "500 markkaa (1952)",
+        "country": "finland",
+        "composition": "Silver (.500)",
+        "url": "https://en.ucoin.net/coin/finland-500-markkaa-1952/?cid=29416",
+        "code": "1952s",
+        "description": ""
+    },
     {
         "src1": "coins/austria-50-schilling-1964-2.jpg",
         "src2": "coins/austria-50-schilling-1964.jpg",
@@ -710,6 +720,16 @@
         "description": ""
     },
     {
+        "src1": "coins/portugal-2-euro-2016.jpg",
+        "src2": "coins/portugal-2-euro-2016-1.jpg",
+        "title": "2 Euro (2016)",
+        "country": "portugal",
+        "composition": "Bi-Metallic: Nickel-Brass plated Nickel center, Copper-Nickel ring",
+        "url": "https://en.ucoin.net/coin/portugal-2-euro-2016/?tid=57854",
+        "code": "2016s",
+        "description": ""
+    },
+    {
         "src1": "coins/south-korea-5000-won-2016.jpg",
         "src2": "coins/south-korea-5000-won-2016-2.jpg",
         "title": "5000 Won (2016)",
@@ -890,6 +910,16 @@
         "description": ""
     },
     {
+        "src1": "coins/france-1-4-euro-2024-1.jpg",
+        "src2": "coins/france-1-4-euro-2024.jpg",
+        "title": "1/4 Euro (2024)",
+        "country": "france",
+        "composition": "Copper-Aluminium-Nickel",
+        "url": "https://en.ucoin.net/coin/france-1-4-euro-2024/?tid=173266",
+        "code": "2024s",
+        "description": ""
+    },
+    {
         "src1": "coins/portugal-2-euro-2024.jpg",
         "src2": "coins/portugal-2-euro-2024-2.jpg",
         "title": "2 Euro (2024)",
@@ -899,4 +929,5 @@
         "code": "2024s",
         "description": ""
     }
+
 ]

@@ -70,6 +70,16 @@
         "avatar": "/countries/avatars/cuba.png"
     },
     {
+        "src": "/countries/flag-finland.jpg",
+        "title": "Finland",
+        "color": "green",
+        "url": "https://olimp-history.ru/node/368",
+        "country": "finland",
+        "code": "",
+        "coordinates": {"latitude": 60.1877830, "longitude": 24.926680},
+        "avatar": "/countries/avatars/finland.png"
+    },
+    {
         "src": "/countries/flag-france.jpg",
         "title": "France",
         "color": "green",

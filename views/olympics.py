@@ -352,7 +352,7 @@ class Olympics():
                     elevation=1,  # Уровень тени
                     content= Container(
                         Column([
-                            Image(src=img["src1"], width=115, height=115),
+                            Image(src=img["src1"], tooltip=img["composition"], width=115, height=115),
                             Row([Text(img["title"], weight=FontWeight.BOLD),], 
                                 spacing=1,alignment="center"),
 

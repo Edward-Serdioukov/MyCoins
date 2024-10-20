@@ -1,2 +1,4 @@
 flet==0.24.1
 numpy
+pandas
+matplotlib

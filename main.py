@@ -1,5 +1,5 @@
 import logging
-
+from flet import *
 import flet
 from flet import Page
 
@@ -87,8 +87,9 @@ def main(page: Page):
     page.on_view_pop = view_pop
 
     page.go("/olympics")
-flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
+flet.app(target=main, assets_dir="assets", view=AppView.WEB_BROWSER, upload_dir="assets/images", port=8000)
+#flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
 #
-#flet.app(target=main, assets_dir="assets")
+flet.app(target=main, assets_dir="assets")
 #flet.app(main) ###flet run --web main.py
 
