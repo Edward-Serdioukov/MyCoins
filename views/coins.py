@@ -26,7 +26,7 @@ class Coins():
         self.code = code
         self.title = title
         self.src = src
-        # Список картинок и надписей
+
         self.coins = [
         {
             "src": "images/coins/austria-50-schilling-1964.jpg ",
@@ -47,7 +47,7 @@ class Coins():
                 center_title=False,
                 bgcolor=colors.SURFACE_VARIANT,
             )
-        # Создание галереи картинок
+
         self.gallery =  GridView(
             expand=1,
             runs_count=5,

@@ -47,30 +47,50 @@ def main(page: Page):
     
 
     def show_image_modal(e):
+        """
+        Shows a modal dialog with the image and some information about the app.
+
+        The dialog contains a close button that the user can click to
+        close the dialog.
+
+        Args:
+            e (Event): The event that triggered the modal dialog.
+        """
         def close_dlg(e):
+            """
+            Closes the dialog when the close button is clicked.
+            """
             dlg_modal.open = False
             page.update()
 
-        # Создание виджета изображения для модального окна
+        # Create the image that will be displayed in the dialog
         image = flet.Image(src='icons/logo1.png', width=200, height=200) 
         
-        # Создание модального окна с изображением
+        # Create the modal dialog with the image and some information
         dlg_modal = flet.AlertDialog(
             modal=True,
             title=flet.Text("About"),
-            content=flet.Column([image,flet.ListTile(title=flet.Text(
-                "My coins collection"), subtitle=
-                flet.Text(
-                    spans=[ flet.TextSpan(
-                    "", 
-                    flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
-                    url="", ),],size=10,),
-                #f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
-            )],alignment=flet.MainAxisAlignment.CENTER,horizontal_alignment=flet.CrossAxisAlignment.CENTER,height=300,),
+            content=flet.Column([
+                image,
+                flet.ListTile(
+                    title=flet.Text("My coins collection"),
+                    subtitle=flet.Text(
+                        spans=[
+                            flet.TextSpan(
+                                "e-mail: mycoins92@gmail.com", 
+                                flet.TextStyle(decoration=flet.TextDecoration.UNDERLINE),
+                                url="mailto: mycoins92@gmail.com", 
+                            )
+                        ],
+                        size=10,
+                    ),
+                    #f"Key: {e.key}, Shift: {e.shift}, Control: {e.ctrl}, Alt: {e.alt}, Meta: {e.meta}"
+                )
+            ], alignment=flet.MainAxisAlignment.CENTER, horizontal_alignment=flet.CrossAxisAlignment.CENTER, height=300),
             actions=[flet.TextButton("Close", on_click=lambda e: close_dlg(e))],
             actions_alignment=flet.MainAxisAlignment.END,
         )            
-        # Отображение модального окна
+        # Show the dialog
         page.dialog = dlg_modal
         dlg_modal.open = True
         page.update()
@@ -87,8 +107,7 @@ def main(page: Page):
     page.on_view_pop = view_pop
 
     page.go("/olympics")
-flet.app(target=main, assets_dir="assets", view=AppView.WEB_BROWSER, upload_dir="assets/images", port=8000)
-#flet.app(target=main, assets_dir="assets", view="web_browser", upload_dir="assets/images", web_renderer = flet.WebRenderer.HTML, port=55432)
+###flet.app(target=main, assets_dir="assets", view=AppView.WEB_BROWSER, upload_dir="assets/images", port=8000)
 #
 flet.app(target=main, assets_dir="assets")
 #flet.app(main) ###flet run --web main.py
