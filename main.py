@@ -5,11 +5,7 @@ from flet import Page
 
 from views.olympics import Olympics
 
-
-
 #logging.basicConfig(level=logging.DEBUG)
-
-
 
 def main(page: Page):
 

@@ -430,6 +430,16 @@
         "description": ""
     },
     {
+        "src1": "coins/china-10-yuan-2008.jpg",
+        "src2": "coins/china-10-yuan-2008-1.jpg",
+        "title": "10 Yuan (2008)",
+        "country": "china",
+        "composition": "Silver (.999)",
+        "url": "https://en.ucoin.net/coin/china-10-yuan-2008/?tid=48137",
+        "code": "2008s",
+        "description": ""
+    },
+    {
         "src1": "coins/china-1-yuan-2008.jpg",
         "src2": "coins/china-1-yuan-2008-2.jpg",
         "title": "1 Yuan (2008)",
@@ -587,6 +597,16 @@
         "composition": "Nordic gold",
         "url": "https://en.ucoin.net/coin/poland-2-zlote-2014/?tid=31234",
         "code": "2014w",
+        "description": ""
+    },
+    {
+        "src1": "coins/brazil-5-reals-2014.jpg",
+        "src2": "coins/brazil-5-reals-2014-1.jpg",
+        "title": "5 Real (2014)",
+        "country": "brazil",
+        "composition": "Silver (.925)",
+        "url": "https://en.ucoin.net/coin/brazil-5-reals-2014/?tid=66415",
+        "code": "2016s",
         "description": ""
     },
     {
@@ -908,10 +928,20 @@
         "url": "https://en.ucoin.net/coin/france-2-euro-2024/?tid=165667",
         "code": "2024s",
         "description": ""
+    },  
+    {
+        "src1": "coins/france-1-4-euro-2021.jpg",
+        "src2": "coins/france-1-4-euro-2021-1.jpg",
+        "title": "1/4 Euro (2021)",
+        "country": "france",
+        "composition": "Copper-Aluminium-Nickel",
+        "url": "https://en.ucoin.net/coin/france-1-4-euro-2021/?tid=120770",
+        "code": "2024s",
+        "description": ""
     },
     {
-        "src1": "coins/france-1-4-euro-2024-1.jpg",
-        "src2": "coins/france-1-4-euro-2024.jpg",
+        "src1": "coins/france-1-4-euro-2024.jpg",
+        "src2": "coins/france-1-4-euro-2024-1.jpg",
         "title": "1/4 Euro (2024)",
         "country": "france",
         "composition": "Copper-Aluminium-Nickel",

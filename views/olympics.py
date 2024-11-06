@@ -1,5 +1,4 @@
 import json
-import random
 import flet.map as map
 from flet import (
     View,
@@ -16,39 +15,24 @@ from flet import (
     IconButton,
     PopupMenuItem,
     PopupMenuButton,
-    ElevatedButton,
     MainAxisAlignment,
     CrossAxisAlignment,
     ThemeMode,
-    ResponsiveRow,
     AlertDialog,
     TextButton,
     FontWeight,
     icons,
-    Stack,
     Tabs,
     Tab,
     Markdown,
     MarkdownExtensionSet,
-    BarChart,
-    BarChartGroup,
-    ChartAxis,
-    BarChartRod,
-    ChartAxisLabel,
-    ChartGridLines,
     ListView,
     SubmenuButton,
     MenuItemButton,
 )
 import flet
 
-from views.coins import Coins
 from collections import Counter
-import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib.offsetbox import OffsetImage, AnnotationBbox
-from flet.matplotlib_chart import MatplotlibChart
-
 
 class Olympics():
 
@@ -117,10 +101,10 @@ class Olympics():
 
             on_change=self.tabs_changed,
             tabs=[Tab(text="All"), 
-                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="green", tooltip="Green")),
-                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="yellow", tooltip="Yellow")),
-                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="red", tooltip="Red")),
-                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="grey", tooltip="Silver")),
+                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="green", tooltip="There is a coin of the country of the Olympics owner")),
+                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="yellow", tooltip="There is no coin of the country of the Olympics owner")),
+                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="red", tooltip="There is no Olimpics coin ")),
+                  Tab(tab_content=Icon(icons.SPORTS_SCORE_ROUNDED, color="grey", tooltip="There is a silver coin")),
                   Tab(tab_content=""),#Icon(icons.SIGNAL_CELLULAR_NO_SIM_OUTLINED, color="grey", tooltip="Not Silver")),
                   ],
         )
@@ -925,8 +909,7 @@ class Olympics():
                 ], alignment=MainAxisAlignment.CENTER,     
             )
         self.informations_listtiles.controls.append(links)
-        ###self.mychart1()
-        ###self.informations_listtiles.controls.append(MatplotlibChart(figure=plt.gcf(), isolated=True, expand=True))
+
         return View(
             route="/information",
             scroll=flet.ScrollMode.AUTO,
@@ -937,92 +920,6 @@ class Olympics():
         )
     
    
-    def mychart1(self):
-        """Draw a horizontal bar chart of Olympic coins by country
-
-        This function loads data from JSON files, counts the number of coins by country,
-        and draws a horizontal bar chart of the results. The chart includes the country
-        names and flags.
-        """
-        # Load data from JSON files
-        with open('coins.json', 'r') as f:
-            coins_data = json.load(f)
-
-        with open('countries.json', 'r') as f:
-            countries_data = json.load(f)
-
-        # Count the number of coins by country
-        coin_counts = Counter(coin['country'] for coin in coins_data)
-
-        # Convert data to a DataFrame for convenience
-        coin_counts_df = pd.DataFrame(coin_counts.items(), columns=['country', 'count'])
-
-        # Convert country data to a DataFrame
-        countries_df = pd.DataFrame(countries_data)
-
-        # Convert country names to title case for consistency
-        coin_counts_df['country'] = coin_counts_df['country'].str.title()
-        countries_df['country'] = countries_df['country'].str.title()
-
-        # Merge data by country
-        merged_df = pd.merge(coin_counts_df, countries_df, on='country', how='left')
-
-        # Sort data by descending count
-        sorted_df = merged_df.sort_values(by='count', ascending=False)
-
-        # Function to add a flag image to the chart
-        def get_flag_image(path, zoom=0.05):
-            """Load an image from a file and return an OffsetImage object
-
-            Args:
-                path (str): The path to the image file
-                zoom (float, optional): The zoom level of the image. Defaults to 0.05.
-
-            Returns:
-                OffsetImage: The image object
-            """
-            if pd.notna(path):  # Check if the path is not NaN
-                try:
-                    image = plt.imread("assets" + path)
-                    return OffsetImage(image, zoom=zoom)
-                except FileNotFoundError:
-                    print(f"File not found: {path}")
-                except Exception as e:
-                    print(f"Error loading flag: {e}")
-            return None
-
-        # Create the bar chart
-        fig, ax = plt.subplots(figsize=(12, 8))
-        bars = ax.barh(sorted_df['country'], sorted_df['count'], color='skyblue')
-
-        # Set up the chart
-        ax.set_xlabel('Number of coins')
-        ax.set_ylabel('Country')
-        ax.set_title('Number of Olympic coins by country')
-        ax.invert_yaxis()  # Reverse the order of the countries
-
-        # Add country names and flags to the chart
-        for i, (bar, (_, row)) in enumerate(zip(bars, sorted_df.iterrows())):
-            country_label = row['country']
-            flag_path = row['src']
-            bar_y_center = bar.get_y() + bar.get_height() / 2
-
-            # Add the country name
-            ###ax.text(bar.get_width(), bar_y_center, f' {country_label}', va='center')
-
-            # Add the flag
-            """
-            flag_image = get_flag_image(flag_path)
-            if flag_image:
-                ab = AnnotationBbox(flag_image, (0, bar_y_center), frameon=False, xycoords="data", boxcoords="offset points", pad=0)
-                ax.add_artist(ab)
-            """
-        ###plt.show()
-
-        # Print the data to the console
-        for _, row in sorted_df.iterrows():
-            print(f"{row['country']}: {row['count']}")
-
     """
     Displays a map of Olympic games locations.
 
