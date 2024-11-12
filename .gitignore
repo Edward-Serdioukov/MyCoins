@@ -7,3 +7,4 @@ proxy/excel_to_json.py
 proxy/edit_excel.py
 output.xlsx
 views/__pycache__/coins.cpython-312.pyc
+.gitignore
