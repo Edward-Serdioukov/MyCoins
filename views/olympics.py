@@ -95,6 +95,7 @@ class Olympics():
             ],
         )
 
+    
         self.filter = Tabs(
             scrollable=True,
             selected_index=0,
@@ -1003,14 +1004,10 @@ class Olympics():
                     markers=[
                         
                         map.Marker(
-                            content=IconButton(content=Icon(icons.LOCATION_ON, 
-                                                    color="red" if img["code"].endswith("s") else "blue",
-                                                    #tooltip=img["title"]
-                                                ),
+                            content=Container(content=Image(src="icons/location2-red.png" if img["code"].endswith("s") else "icons/location2.png",
+                                                            width=345, height=345),
                                             alignment=flet.alignment.center,
-                                            icon_size=25,
-                                            data=img,
-                                            #on_click=lambda e: show_image_modal(e)
+                                            data=img,  width=345, height=345,
                                             on_click=self.on_marker_click,
                                             tooltip=flet.Tooltip(
                                                 message=img["title"],
@@ -1019,7 +1016,7 @@ class Olympics():
                                                 bgcolor=colors.WHITE,
                                                 text_style=flet.TextStyle(size=20, color=colors.BLACK),),
                                             ),
-                            coordinates=map.MapLatitudeLongitude(img["coordinates"]["lat"], img["coordinates"]["lon"]),
+                             coordinates=map.MapLatitudeLongitude(img["coordinates"]["lat"], img["coordinates"]["lon"]),
                         ) for img in data
                     ],
                 ), 
