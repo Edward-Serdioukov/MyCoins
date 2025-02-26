@@ -958,6 +958,16 @@
         "url": "https://en.ucoin.net/coin/portugal-2-euro-2024/?tid=162971",
         "code": "2024s",
         "description": ""
+    },
+    {
+        "src1": "coins/italy-3-euro-2026-11.jpg", 
+        "src2": "coins/italy-3-euro-2026-22.jpg",
+        "title": "3 Euro (2024)",
+        "country": "italy",
+        "composition": "Silver (.999)",
+        "url": "https://www.coin-database.com/coins/3-euro-coin-winter-olympic-games-milan-cortina-2026-italy-2024.html",
+        "code": "2026w",
+        "description": ""
     }
 
 ]

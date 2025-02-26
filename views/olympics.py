@@ -897,7 +897,20 @@ class Olympics():
                             selectable=True,
                             extension_set=MarkdownExtensionSet.GITHUB_WEB,
                             on_tap_link=lambda e: self.page.launch_url(e.data),
-                            ),   
+                            ),  
+                    Markdown(
+                            "[__Collector and commemorative coins__](https://www.coin-database.com/)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),                      
+                    Markdown(
+                            "[__Colnect, coin catalog__](https://colnect.com/en/coins)",
+                            selectable=True,
+                            extension_set=MarkdownExtensionSet.GITHUB_WEB,
+                            on_tap_link=lambda e: self.page.launch_url(e.data),
+                            ),  
+                    
                     Markdown(
                             "[__Coin grading__](https://en.wikipedia.org/wiki/Coin_grading)",
                             selectable=True,

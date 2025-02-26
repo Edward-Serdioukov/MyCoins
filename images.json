@@ -1,8 +1,17 @@
 [
     {
+        "src": "/images/LA_2028.png",
+        "title": "Los Angeles 2028",
+        "color": "red",
+        "url": "https://www.olympics.com/en/olympic-games/los-angeles-2028",
+        "games": "XXXIV Summer Olympics",
+        "code": "2028s",
+        "coordinates": {"lat": 33.5522, "lon": -117.7437}
+    },
+    {
         "src": "/images/2026_Winter_Olympics_logo.png",
         "title": "Milan Cortina 2026",
-        "color": "red",
+        "color": "green",
         "url": "https://milanocortina2026.olympics.com/en",
         "games": "XXV Winter Olympics",
         "code": "2026w",
